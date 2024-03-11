@@ -1,5 +1,5 @@
 # An analysis of the alignment of latent diffusion models 
-*Lorenz Linhardt\*, Marco Morik\*, Sidney Bender\*, Naima Elosegui Borras <br>
+*Lorenz Linhardt, Marco Morik, Sidney Bender, Naima Elosegui Borras* <br>
 Accepted at the ICLR2024 Re-Align workshop. <br>
 Paper: https://openreview.net/pdf?id=PFnoxcKh33 <br>
 
@@ -10,7 +10,10 @@ Paper: https://openreview.net/pdf?id=PFnoxcKh33 <br>
         year={2024},
   		maintitle = {Twelfth International Conference on Learning Representations},
   		booktitle = {Workshop on Representational Alignment},
-  }
+    }
 ```
 
 ## Getting started
+
+## Acknowledgements
+Some code related to probing and evaluation is adapted from the [human_alignment](https://github.com/LukasMut/human_alignment) and the [gLocal](https://github.com/LukasMut/gLocal) repo.
