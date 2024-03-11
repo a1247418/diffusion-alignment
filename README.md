@@ -8,8 +8,8 @@ Paper: https://openreview.net/pdf?id=PFnoxcKh33 <br>
         title={An analysis of the alignment of latent diffusion models},
         author={Lorenz Linhardt and Marco Morik and Sidney Bender and Naima Elosegui Borras},
         year={2024},
-  		maintitle = {Twelfth International Conference on Learning Representations},
-  		booktitle = {Workshop on Representational Alignment},
+  	    maintitle = {Twelfth International Conference on Learning Representations},
+  	    booktitle = {Workshop on Representational Alignment},
     }
 ```
 
