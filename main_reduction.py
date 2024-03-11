@@ -87,7 +87,6 @@ if __name__ == "__main__":
             pool=False,
             path_to_caption_dict=None,
             save=True,
-            v2=True,
         )
         print(features.shape)
 
