@@ -1,3 +1,5 @@
+# Adapted from: https://github.com/LukasMut/gLocal/blob/main/utils/probing/triple_loss.py
+
 from typing import Tuple
 
 import torch

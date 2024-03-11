@@ -1,3 +1,5 @@
+# Adapted from https://github.com/LukasMut/human_alignment/blob/main/main_regression.py
+
 import argparse
 import os
 

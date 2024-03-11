@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
 # Adapted from https://github.com/LukasMut/gLocal/blob/main/utils/evaluation/helpers.py
 
 import copy
@@ -165,33 +162,6 @@ def get_failures(results: pd.DataFrame) -> pd.DataFrame:
         data=choices, index=failures, columns=results.model.unique()
     )
     return model_failures
-
-"""
-def save_pickle(data, file_path: str, model_name:str, source: str, module_type:str):
-    if not os.path.exists(os.path.dirname(file_path)):
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
-
-    try:
-        for attempts in range(5):
-            try:
-                existing_data = np.load(file_path, allow_pickle=True)
-                break
-            except pickle.UnpicklingError:
-                print(f"Failed to load data, trying again... ({attempts+1}/5)")
-                time.sleep(np.random.randint(5, 60))
-    except FileNotFoundError:
-        existing_data = {}
-
-    if source not in existing_data.keys():
-        existing_data[source] = {}
-    if model_name not in existing_data[source]:
-        existing_data[source][model_name] = {}
-
-    existing_data[source][model_name][module_type] = data
-
-    with open(file_path, "wb") as f:
-        pickle.dump(existing_data, f)
-"""
 
 
 def convert_to_filename(model_name: str, layer_name: str, source: str):

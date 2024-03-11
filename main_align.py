@@ -3,7 +3,6 @@ import os
 import time
 from typing import Any, Union, List, Optional
 
-import pickle as pkl
 import numpy as np
 import torch
 from torchvision.transforms import ToTensor, Compose, Resize
@@ -123,21 +122,6 @@ def eval_alignment(
         for source, model_name, module_type in zip(sources, models, module_types):
             print(source, model_name, module_type, "cc0 =", cc0)
 
-            """for attempts in range(5):
-                try:
-                    features = np.load(path_to_embeddings, allow_pickle=True)[source][model_name][module_type]
-                    break
-                except pkl.UnpicklingError:
-                    print(f"Failed to load data, trying again... ({attempts + 1}/5)")
-                    time.sleep(np.random.randint(5, 60))
-                except KeyError:
-                    print("   Features not found. Stopping evaluation.")
-                    skip = True
-                    break
-            if skip:
-                break
-            """
-
             try:
                 features = helpers.load_features(
                         path=path_to_embeddings,
@@ -182,22 +166,6 @@ if __name__ == "__main__":
     args = parseargs()
 
     path_to_alignment = os.path.join(args.data_root, "alignment.pkl")
-    """path_to_embeddings = os.path.join(
-        args.data_root, "model_features_per_source_cleaned.pkl"
-    )
-
-    if args.cc0:
-        path_to_embeddings = path_to_embeddings.replace(
-            ".pkl", "_cc0.pkl"
-        )
-        path_to_alignment = path_to_alignment.replace(
-            ".pkl", "_cc0.pkl"
-        )
-    if args.pca is not None:
-        path_to_alignment = path_to_alignment.replace(
-                ".pkl", f"_pca{args.pca}.pkl"
-        )
-    """
     path_to_embeddings = args.data_root
 
     sources = [args.source] if type(args.source) == str else args.source

@@ -65,17 +65,12 @@ while [ ! -z "$1" ];do
 	shift
 	prefix="$1"
       ;;	
-    -v|--v2)
-	extra_embed=${extra_embed}" --v2"
-	data_root=${data_root}"_v2"
-	subfolder="things_data_v2"
-      ;;
     -d|--dist)
 	shift
 	dist="$1"
 	extra_align=${extra_align}" --distance "${dist}
 	data_root=${data_root}"_"${dist}
-	subfolder="things_data_v2_"${dist}
+	subfolder="things_data_"${dist}
       ;;
     --no_embed)
 	embed=0

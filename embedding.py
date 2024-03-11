@@ -9,7 +9,7 @@ from thingsvision import get_extractor
 from thingsvision.utils.data import DataLoader as DL
 
 from things import THINGSBehavior
-from diffusion_encoders import StableDiffusionEncoder, StableDiffusionEncoder2
+from diffusion_encoders import StableDiffusionEncoder, StableDiffusionEncoder
 
 from helpers import save_pickle
 
@@ -27,7 +27,6 @@ def embed(
     pool: bool = False,
     path_to_caption_dict: Optional[dict] = None,
     save: bool = True,
-    v2: bool = False
 ):
     print("Embedding", source, model_name, module_type, "cc0 =", cc0, "pretrained = ", pretrained)
     if path_to_model_dict is None:
@@ -96,9 +95,7 @@ def embed(
                 batch_size=1,
             )
 
-            encoder_class = StableDiffusionEncoder2 if v2 else StableDiffusionEncoder
-
-            encoder = encoder_class(
+            encoder = StableDiffusionEncoder(
                 checkpoint_name=model_params["ckpt"],
                 noise_level=model_params["noise"],
                 extraction_module_name=module_type,

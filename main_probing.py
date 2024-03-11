@@ -109,11 +109,6 @@ def parseargs():
         action="store_true",
         help="whether or not to use a bias for the naive transform",
     )
-    aa(
-        "--wordnet",
-        action="store_true",
-        help="whether or not to use the wordnet objective",
-    )
     aa("--probing_root", type=str, help="path/to/probing")
     aa("--log_dir", type=str, help="directory to checkpoint transformations")
     aa("--rnd_seed", type=int, default=42, help="random seed for reproducibility")
@@ -148,24 +143,6 @@ def create_optimization_config(args) -> Tuple[FrozenDict, FrozenDict]:
     optim_cfg["ckptdir"] = os.path.join(args.log_dir, "+".join(args.model), "+".join(args.module))
     return optim_cfg
 
-
-"""def load_features(
-    probing_root: str, subfolder: Optional[str] = None, cc0: bool = False#, pca: Optional[int] = None
-) -> Dict[str, Array]:
-    if subfolder is None:
-        path = os.path.join(probing_root, "model_features_per_source_cleaned.pkl")
-    else:
-        path = os.path.join(
-            probing_root, subfolder, "model_features_per_source_cleaned.pkl"
-        )
-    if cc0:
-        path = path.replace(
-            ".pkl", "_cc0.pkl"
-        )
-    with open(path, "rb") as f:
-        features = pickle.load(f)
-    return features
-"""
 
 def get_batches(triplets: Tensor, batch_size: int, train: bool) -> Iterator:
     batches = DataLoader(
@@ -343,7 +320,6 @@ def run(
     optim_cfg: FrozenDict,
     rnd_seed: int,
     num_processes: int,
-    use_wordnet: bool = False,
     pca: Optional[int] = None
 ) -> Tuple[Dict[str, List[float]], Array]:
     """Run optimization process."""
@@ -483,7 +459,6 @@ if __name__ == "__main__":
             optim_cfg=optim_cfg,
             rnd_seed=args.rnd_seed,
             num_processes=args.num_processes,
-            use_wordnet=args.wordnet,
             pca=args.pca
         )
         avg_cv_acc = get_mean_cv_acc(cv_results)

@@ -1,6 +1,5 @@
 import argparse
-import os
-from typing import Any, Optional
+from typing import Any
 
 import numpy as np
 import torch
@@ -63,11 +62,6 @@ def parseargs():
         action="store_true",
         help="whether or not to pool representations spatially",
     )
-    aa(
-        "--v2",
-        action="store_true",
-        help="whether or not to use the embedder v2",
-    )
 
     args = parser.parse_args()
     return args
@@ -88,5 +82,4 @@ if __name__ == "__main__":
         pretrained=not args.not_pretrained,
         pool=args.pool or args.source == "diffusion",
         path_to_caption_dict=args.path_to_caption_dict,
-        v2=args.v2,
     )
