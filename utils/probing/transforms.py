@@ -176,7 +176,7 @@ class Linear(pl.LightningModule):
         ooo_predictions = self.convert_predictions(sim_predictions)
         return ooo_predictions
 
-    def backward(self, loss, optimizer, optimizer_idx):
+    def backward(self, loss, *args, **kwargs):
         loss.backward()
 
     def configure_optimizers(self):

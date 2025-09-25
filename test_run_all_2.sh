@@ -1,4 +1,27 @@
-export OMP_NUM_THREADS=14
+#!/bin/bash -l
+#SBATCH -a 0-8
+#SBATCH -o sbtach_logs/all_%A_%a.out
+#SBATCH -e sbtach_logs/all_%A_%a.err
+#SBATCH -D ./
+#SBATCH -J all
+#SBATCH --partition="gpu-2d"
+#SBATCH --nodes=1
+#SBATCH --cpus-per-task=8
+#SBATCH --gres=gpu:1
+#SBATCH --mem=80000M
+
+
+# ToDo:
+# Source Activate
+# Die variablen am Anfang
+# Die lines zum entfernen
+# Die Slurm line mit den mehreren Jobs
+
+source test3/bin/activate
+
+
+export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK} 
+
 
 dataset="things";
 device="gpu";
@@ -133,8 +156,8 @@ else
 	#noise=(90) # 
 fi
 
-base_modules=( "mid_block" "up_blocks.0.resnets.1" "up_blocks.1.resnets.1" ) # "up_blocks.2.resnets.1" ) # "down_blocks.1.resnets.1" )
-base_modules=( "down_blocks.0.resnets.1" )
+#base_modules=( "mid_block" "up_blocks.0.resnets.1" "up_blocks.1.resnets.1" ) # "up_blocks.2.resnets.1" ) # "down_blocks.1.resnets.1" )
+#base_modules=( "down_blocks.0.resnets.1" )
 
 base_models=()
 for n in "${noise[@]}"; do
@@ -173,7 +196,7 @@ if [ $embed == 1 ]
 then
 	printf "\nStarted embedding for ${models[$SLURM_ARRAY_TASK_ID]} and ${modules[$SLURM_ARRAY_TASK_ID]} at $(date)\n"
 	
-	python3 main_embed.py \
+	srun python3 main_embed.py \
 	--path_to_caption_dict=${path_to_caption_dict} \
 	--path_to_model_dict=${path_to_model_dict} \
 	--data_root $data_root \
@@ -192,7 +215,7 @@ if [ $align == 1 ]
 then
 	printf "\nStarted alignment eval for ${models[$SLURM_ARRAY_TASK_ID]} and ${modules[$SLURM_ARRAY_TASK_ID]} at $(date)\n"
 	
-	python3 main_align.py \
+	srun python3 main_align.py \
 	--data_root $data_root \
 	--things_root $things_root \
 	--model "${models[$SLURM_ARRAY_TASK_ID]}" \
@@ -215,7 +238,7 @@ then
 	printf "\nStarted $probing for ${models[$SLURM_ARRAY_TASK_ID]} and ${modules[$SLURM_ARRAY_TASK_ID]} at $(date)\n"
 	
 	for lmbda in "${lambdas[@]}"; do
-		python3 main_probing.py \
+		srun python3 main_probing.py \
 	--data_root $data_root \
 	--dataset $dataset \
 	--model "${models[$SLURM_ARRAY_TASK_ID]}" \
