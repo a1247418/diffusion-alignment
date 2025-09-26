@@ -13,11 +13,12 @@ from huggingface_hub import snapshot_download
 
 
 class SD3HighestBlockEncoder(torch.nn.Module):
-    def __init__(self, checkpoint: str = "stabilityai/stable-diffusion-3-medium-diffusers", device: str = "cuda"):
+    def __init__(self, checkpoint: str = "stabilityai/stable-diffusion-3-medium-diffusers", device: str = "cuda", block_idx: Optional[int] = 12):
         super().__init__()
         # Decide device up front
         self.device = device if (device == "cuda" and torch.cuda.is_available()) else "cpu"
         self.checkpoint = checkpoint
+        self.block_idx = block_idx
 
         # --- Diffusers imports kept lazy to keep deps isolated
         from diffusers import AutoPipelineForImage2Image
@@ -53,14 +54,18 @@ class SD3HighestBlockEncoder(torch.nn.Module):
             except Exception:
                 transformer_named = None
 
-            # Prefer the last transformer block explicitly if available
+            # Prefer the requested transformer block if available; fallback to last
             sel_name = "(last unnamed)"
             block_module = None
             try:
                 blocks = getattr(transformer, "transformer_blocks", None)
                 if blocks is not None and len(blocks) > 0:
-                    block_module = blocks[-1]
-                    sel_name = f"transformer_blocks.{len(blocks) - 1}"
+                    idx = len(blocks) - 1
+                    if isinstance(self.block_idx, int):
+                        # clamp to valid range
+                        idx = max(0, min(self.block_idx, len(blocks) - 1))
+                    block_module = blocks[idx]
+                    sel_name = f"transformer_blocks.{idx}"
             except Exception:
                 block_module = None
 
@@ -130,12 +135,29 @@ class SD3HighestBlockEncoder(torch.nn.Module):
         activations = []
 
         def hook_fn(_m, _inp, out):
-            # Some modules output tuples; take the first tensor-like
-            if isinstance(out, tuple):
-                out = out[0]
-            activations.append(out.detach())
-            if stop_early:
-                raise _EarlyStop
+            # Select a meaningful tensor from various output structures
+            selected = None
+            if isinstance(out, torch.Tensor):
+                selected = out
+            elif isinstance(out, (list, tuple)):
+                # Prefer second element when present (often hidden_states), else first tensor
+                if len(out) > 1 and isinstance(out[1], torch.Tensor):
+                    selected = out[1]
+                else:
+                    for elem in out:
+                        if isinstance(elem, torch.Tensor):
+                            selected = elem
+                            break
+            elif isinstance(out, dict):
+                for v in out.values():
+                    if isinstance(v, torch.Tensor):
+                        selected = v
+                        break
+
+            if selected is not None:
+                activations.append(selected.detach())
+                if stop_early:
+                    raise _EarlyStop
 
         handle = self.extraction_module.register_forward_hook(hook_fn)
         try:
@@ -167,7 +189,14 @@ def compute_ooo_acc(features: np.ndarray, triplets: np.ndarray) -> float:
     return helpers.accuracy(choices)
 
 
-def extract_features(encoder: SD3HighestBlockEncoder, things_root: str, pool: bool = True, cc0: bool = False) -> np.ndarray:
+def extract_features(
+    encoder: SD3HighestBlockEncoder,
+    things_root: str,
+    pool: bool = True,
+    cc0: bool = False,
+    save_k: int = 5,
+    save_dir: str = "denoised",
+) -> np.ndarray:
     transform = Compose([Resize(512), ToTensor()])
     dataset = THINGSBehavior(root=things_root, aligned=False, download=False, transform=transform, cc0=cc0)
 
@@ -175,10 +204,33 @@ def extract_features(encoder: SD3HighestBlockEncoder, things_root: str, pool: bo
     loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=1)
     feats = []
     with torch.no_grad():
-        for sample in tqdm(loader, total=len(dataset), desc="Extracting features", unit="img"):
+        if save_k and save_k > 0:
+            os.makedirs(save_dir, exist_ok=True)
+
+        for idx, sample in enumerate(tqdm(loader, total=len(dataset), desc="Extracting features", unit="img")):
             img = sample
             if isinstance(sample, (list, tuple)):
                 img = sample[0]
+            if save_k and save_k > 0 and idx < save_k:
+                try:
+                    try:
+                        encoder.pipe.set_progress_bar_config(disable=True, leave=False)
+                    except Exception:
+                        pass
+                    result = encoder.pipe(
+                        image=img.to(encoder.device),
+                        strength=0.1,
+                        prompt="",
+                        guidance_scale=0.0,
+                        num_inference_steps=20,
+                        generator=encoder.generator,
+                    )
+                    if hasattr(result, "images") and len(result.images) > 0:
+                        out_img = result.images[0]
+                        fname = os.path.join(save_dir, f"{idx+1:03d}.png")
+                        out_img.save(fname)
+                except Exception as e:
+                    tqdm.write(f"Failed to save denoised image {idx+1}: {e}")
             emb = encoder(img, stop_early=True)  # internal bars already disabled
             if pool:
                 emb = emb.float()
@@ -195,6 +247,8 @@ def main():
     parser.add_argument("--checkpoint", type=str, default="stabilityai/stable-diffusion-3-medium-diffusers")
     parser.add_argument("--repo_id", type=str, default="stabilityai/stable-diffusion-3-medium-diffusers")
     parser.add_argument("--cc0", action="store_true")
+    parser.add_argument("--block_idx", type=int, default=12)
+    parser.add_argument("--save_k", type=int, default=5)
     args = parser.parse_args()
 
     # High-level progress across major stages
@@ -224,7 +278,7 @@ def main():
     pbar.update(1)
 
     # 2) Initialize encoder (this constructs and moves the pipeline)
-    encoder = SD3HighestBlockEncoder(checkpoint=ckpt_to_use)
+    encoder = SD3HighestBlockEncoder(checkpoint=ckpt_to_use, block_idx=args.block_idx)
     pbar.update(1)
 
     # 3) Load dataset (lightweight here, but keep a clear step)
@@ -233,7 +287,14 @@ def main():
     pbar.update(1)
 
     # 4) Extract features with its own inner progress bar
-    features = extract_features(encoder, things_root=args.things_root, pool=True, cc0=args.cc0)
+    features = extract_features(
+        encoder,
+        things_root=args.things_root,
+        pool=True,
+        cc0=args.cc0,
+        save_k=args.save_k,
+        save_dir="denoised",
+    )
     pbar.update(1)
 
     # 5) Load triplets
@@ -246,6 +307,17 @@ def main():
     pbar.close()
 
     print(f"Zero-shot odd-one-out accuracy: {acc:.4f}")
+
+    # Write accuracy to sd3_results/<block_idx>.txt
+    try:
+        out_dir = "sd3_results"
+        os.makedirs(out_dir, exist_ok=True)
+        fname = os.path.join(out_dir, f"{args.block_idx}.txt")
+        with open(fname, "w") as f:
+            f.write(f"Zero-shot odd-one-out accuracy: {acc:.4f}\n")
+        tqdm.write(f"Wrote accuracy to '{fname}'")
+    except Exception as e:
+        tqdm.write(f"Failed to write accuracy file: {e}")
 
 
 if __name__ == "__main__":
