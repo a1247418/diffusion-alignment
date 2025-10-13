@@ -1,10 +1,10 @@
 import argparse
-from typing import Optional, Tuple
+from typing import Optional
 
 import os
 import numpy as np
 import torch
-from torchvision.transforms import Compose, Resize, ToTensor
+from torchvision.transforms import Compose, Resize, ToTensor, ToPILImage
 from tqdm import tqdm
 
 from things import THINGSBehavior
@@ -189,28 +189,135 @@ def compute_ooo_acc(features: np.ndarray, triplets: np.ndarray) -> float:
     return helpers.accuracy(choices)
 
 
+def _noisify_latents_for_preview(encoder, latents, num_inference_steps: int, strength_used: float) -> torch.Tensor:
+    """
+    Create a preview 'noised' latent for saving a visualization image.
+    Works with schedulers that don't implement `add_noise` (e.g., FlowMatchEulerDiscreteScheduler),
+    by falling back to a sigma-schedule formulation: x_t = x_0 + sigma_t * noise.
+    Ensures dtype/device consistency with the VAE.
+    """
+    sched = encoder.pipe.scheduler
+
+    # Prepare timesteps/sigmas on the right device
+    sched.set_timesteps(num_inference_steps, device=latents.device)
+    # timesteps may exist or not; use index math for consistency with strength
+    init_timestep = min(int(num_inference_steps * strength_used), num_inference_steps)
+    t_start = max(num_inference_steps - init_timestep, 0)
+    t_index = t_start  # index into scheduler arrays
+
+    # Generate noise (match latents dtype/device exactly)
+    noise = torch.randn(latents.shape, device=latents.device, dtype=latents.dtype)
+
+    # Preferred path: use `add_noise` if available
+    if hasattr(sched, "add_noise") and callable(getattr(sched, "add_noise")):
+        timesteps = getattr(sched, "timesteps", None)
+        timestep = timesteps[t_index] if torch.is_tensor(timesteps) or isinstance(timesteps, (list, tuple)) else t_index
+        return sched.add_noise(latents, noise, timestep)
+
+    # Fallback path: use sigma schedule if available (Karras/Flow schedulers)
+    sigmas = getattr(sched, "sigmas", None)
+    if sigmas is not None:
+        # Ensure tensor on same device/dtype as latents
+        if not torch.is_tensor(sigmas):
+            sigmas = torch.tensor(sigmas, device=latents.device, dtype=latents.dtype)
+        else:
+            sigmas = sigmas.to(device=latents.device, dtype=latents.dtype)
+        sigma_t = sigmas[t_index]
+        # Shape-match sigma for broadcasting
+        while sigma_t.ndim < latents.ndim:
+            sigma_t = sigma_t.view(-1, *[1] * (latents.ndim - 1))
+        return latents + sigma_t * noise
+
+    # Last-resort generic fallback (preview only)
+    return latents + noise * latents.new_tensor(0.7)
+
+
 def extract_features(
     encoder: SD3HighestBlockEncoder,
     things_root: str,
     pool: bool = True,
     cc0: bool = False,
+    num_extractions: Optional[int] = None,
     save_k: int = 5,
     save_dir: str = "denoised",
 ) -> np.ndarray:
     transform = Compose([Resize(512), ToTensor()])
     dataset = THINGSBehavior(root=things_root, aligned=False, download=False, transform=transform, cc0=cc0)
 
-    # One clear progress bar for feature extraction over all samples
+    # One clear progress bar for feature extraction over all samples (or limited subset)
     loader = torch.utils.data.DataLoader(dataset=dataset, batch_size=1)
+    effective_total = len(dataset) if (num_extractions is None or num_extractions <= 0) else min(len(dataset), num_extractions)
     feats = []
     with torch.no_grad():
         if save_k and save_k > 0:
             os.makedirs(save_dir, exist_ok=True)
 
-        for idx, sample in enumerate(tqdm(loader, total=len(dataset), desc="Extracting features", unit="img")):
+        for idx, sample in enumerate(tqdm(loader, total=effective_total, desc="Extracting features", unit="img")):
             img = sample
+            if num_extractions is not None and num_extractions > 0 and idx >= num_extractions:
+                break
             if isinstance(sample, (list, tuple)):
                 img = sample[0]
+
+            if save_k and save_k > 0 and idx < save_k:
+                # Save original image alongside denoised
+                try:
+                    img_to_save = img[0] if img.ndim == 4 and img.shape[0] == 1 else img
+                    pil_img = ToPILImage()(img_to_save.detach().cpu())
+                    orig_fname = os.path.join(save_dir, f"orig_{idx+1:03d}.png")
+                    pil_img.save(orig_fname)
+                except Exception as e:
+                    tqdm.write(f"Failed to save original image {idx+1}: {e}")
+
+            if save_k and save_k > 0 and idx < save_k:
+                # Save a scheduler-consistent noised version of the image
+                try:
+                    strength_used = 0.4
+                    num_inference_steps = 20
+
+                    vae = encoder.pipe.vae
+                    vae_dtype = vae.dtype
+                    vae_device = next(vae.parameters()).device
+
+                    # Prepare image tensor in [-1, 1] for VAE (match dtype/device)
+                    img_tensor = img.to(device=vae_device, dtype=vae_dtype)
+                    if img_tensor.ndim == 3:
+                        img_tensor = img_tensor.unsqueeze(0)
+
+                    # Keep dtype by using same-dtype scalars
+                    two = torch.tensor(2.0, dtype=vae_dtype, device=vae_device)
+                    one = torch.tensor(1.0, dtype=vae_dtype, device=vae_device)
+                    img_tensor = img_tensor.clamp(0, 1) * two - one  # stays in vae dtype
+
+                    # Encode to latents
+                    scaling_factor_value = getattr(vae.config, "scaling_factor", 0.18215)
+                    scaling_factor = torch.tensor(scaling_factor_value, device=vae_device, dtype=vae_dtype)
+
+                    posterior = vae.encode(img_tensor).latent_dist
+                    latents = posterior.sample(generator=encoder.generator).to(dtype=vae_dtype, device=vae_device)
+                    latents = latents * scaling_factor  # stays in vae dtype
+
+                    # Create a preview noised latent compatible with Flow/Karras-style schedulers
+                    noised_latents = _noisify_latents_for_preview(
+                        encoder=encoder,
+                        latents=latents,  # already vae dtype/device
+                        num_inference_steps=num_inference_steps,
+                        strength_used=strength_used,
+                    )
+
+                    # Decode back to pixel space
+                    decoded = vae.decode(noised_latents / scaling_factor)
+                    sample_dec = decoded.sample if hasattr(decoded, "sample") else decoded
+                    # Map from [-1,1] to [0,1]
+                    sample_dec = (sample_dec / two + 0.5).clamp(0, 1)
+
+                    # ToPILImage expects float32 CPU tensor in [0,1]
+                    sample_img = sample_dec[0].detach().to(torch.float32).cpu()
+                    noised_fname = os.path.join(save_dir, f"noised_{idx+1:03d}.png")
+                    ToPILImage()(sample_img).save(noised_fname)
+                except Exception as e:
+                    tqdm.write(f"Failed to save noised image {idx+1}: {e}")
+
             if save_k and save_k > 0 and idx < save_k:
                 try:
                     try:
@@ -219,7 +326,7 @@ def extract_features(
                         pass
                     result = encoder.pipe(
                         image=img.to(encoder.device),
-                        strength=0.1,
+                        strength=0.4,
                         prompt="",
                         guidance_scale=0.0,
                         num_inference_steps=20,
@@ -231,13 +338,25 @@ def extract_features(
                         out_img.save(fname)
                 except Exception as e:
                     tqdm.write(f"Failed to save denoised image {idx+1}: {e}")
+
             emb = encoder(img, stop_early=True)  # internal bars already disabled
             if pool:
                 emb = emb.float()
                 while emb.ndim > 2:
                     emb = emb.mean(dim=-1)
             feats.append(emb.squeeze().detach().cpu())
+
     features = torch.stack(feats)
+    # Save the first k feature vectors to a text file in save_dir
+    if save_k and save_k > 0:
+        try:
+            os.makedirs(save_dir, exist_ok=True)
+            out_path = os.path.join(save_dir, "features_first_k.txt")
+            k = min(save_k, features.shape[0])
+            feats_2d = features[:k].view(k, -1).float().cpu().numpy()
+            np.savetxt(out_path, feats_2d, fmt="%.6f")
+        except Exception as e:
+            tqdm.write(f"Failed to save features file: {e}")
     return features.numpy().astype(np.float32)
 
 
@@ -248,6 +367,7 @@ def main():
     parser.add_argument("--repo_id", type=str, default="stabilityai/stable-diffusion-3-medium-diffusers")
     parser.add_argument("--cc0", action="store_true")
     parser.add_argument("--block_idx", type=int, default=12)
+    parser.add_argument("--num_extractions", type=int, default=None)
     parser.add_argument("--save_k", type=int, default=5)
     args = parser.parse_args()
 
@@ -292,6 +412,7 @@ def main():
         things_root=args.things_root,
         pool=True,
         cc0=args.cc0,
+        num_extractions=args.num_extractions,
         save_k=args.save_k,
         save_dir="denoised",
     )
@@ -299,10 +420,24 @@ def main():
 
     # 5) Load triplets
     triplets = dataset.get_triplets()
+    try:
+        triplets = np.asarray(triplets)
+        if triplets.ndim == 2 and triplets.shape[1] >= 2:
+            num_feat = features.shape[0]
+            mask = (triplets < num_feat).all(axis=1)
+            triplets = triplets[mask]
+        else:
+            tqdm.write("Triplets format unexpected; skipping filtering.")
+    except Exception as e:
+        tqdm.write(f"Failed to filter triplets by extracted subset: {e}")
     pbar.update(1)
 
     # 6) Evaluate OOO accuracy
-    acc = compute_ooo_acc(features, triplets)
+    if isinstance(triplets, np.ndarray) and triplets.size > 0:
+        acc = compute_ooo_acc(features, triplets)
+    else:
+        acc = float("nan")
+        tqdm.write("No valid triplets after filtering; accuracy is NaN.")
     pbar.update(1)
     pbar.close()
 

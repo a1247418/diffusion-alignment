@@ -1,5 +1,5 @@
 #!/bin/bash -l
-#SBATCH -a 0-8
+#SBATCH -a 0-98
 #SBATCH -o sbtach_logs/all_%A_%a.out
 #SBATCH -e sbtach_logs/all_%A_%a.err
 #SBATCH -D ./
