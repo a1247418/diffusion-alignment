@@ -1,0 +1,3 @@
+[Array 133] Starting run at Tue Oct 14 01:17:02 CEST 2025
+  noise=80% (noise_pct=0.80), text_conditioning=label, block_idx=14
+SD3HighestBlockEncoder: using module 'transformer.transformer_blocks.14' (JointTransformerBlock)

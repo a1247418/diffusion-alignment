@@ -489,6 +489,9 @@ def main():
     # Persist
     try:
         out_dir = "sd3_results"
+        # If using text conditioning, save under a subfolder named by the mode
+        if args.text_conditioning in ("label", "description"):
+            out_dir = os.path.join(out_dir, args.text_conditioning)
         os.makedirs(out_dir, exist_ok=True)
         fname = os.path.join(out_dir, f"t{int(100*args.noise_pct)}_block{args.block_idx}.txt")
         with open(fname, "w") as f:

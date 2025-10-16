@@ -1,0 +1,1 @@
+Zero-shot odd-one-out accuracy (t=10%): 0.3905

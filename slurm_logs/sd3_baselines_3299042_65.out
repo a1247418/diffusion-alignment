@@ -1,0 +1,9 @@
+[Array 65] Starting run at Tue Oct 14 00:25:40 CEST 2025
+  noise=10% (noise_pct=0.10), text_conditioning=description, block_idx=7
+SD3HighestBlockEncoder: using module 'transformer.transformer_blocks.7' (JointTransformerBlock)
+
+Shape of embeddings torch.Size([1854, 1536])
+
+Zero-shot odd-one-out accuracy (t=10%): 0.3907
+Wrote accuracy to 'sd3_results/description/t10_block7.txt'
+[Array 65] Finished at Tue Oct 14 00:37:38 CEST 2025

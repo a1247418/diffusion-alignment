@@ -1,0 +1,1866 @@
+Pipeline:   0%|           | 0/62025-10-14 00:01:18.305800: I tensorflow/core/util/util.cc:169] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-14 00:01:18.368547: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2025-10-14 00:01:18.368569: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+`torch_dtype` is deprecated! Use `dtype` instead!
+You set `add_prefix_space`. The tokenizer needs to be converted from the slow tokenizers
+
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s][A
+Loading checkpoint shards:  50%|█████     | 1/2 [00:05<00:05,  5.95s/it][A
+Loading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.69s/it][ALoading checkpoint shards: 100%|██████████| 2/2 [00:11<00:00,  5.73s/it]
+                               Pipeline:  17%|█▋         | 1/6Pipeline:  33%|███▎       | 2/6
+Extracting features@t:   0%|          | 0/1854 [00:00<?, ?img/s][A
+Extracting features@t:   0%|          | 1/1854 [00:03<1:35:25,  3.09s/img][A
+Extracting features@t:   0%|          | 2/1854 [00:05<1:21:21,  2.64s/img][A
+Extracting features@t:   0%|          | 3/1854 [00:07<1:16:44,  2.49s/img][A
+Extracting features@t:   0%|          | 4/1854 [00:10<1:15:04,  2.44s/img][A
+Extracting features@t:   0%|          | 5/1854 [00:12<1:13:31,  2.39s/img][A
+Extracting features@t:   0%|          | 6/1854 [00:14<1:11:56,  2.34s/img][A
+Extracting features@t:   0%|          | 7/1854 [00:16<1:10:51,  2.30s/img][A
+Extracting features@t:   0%|          | 8/1854 [00:19<1:10:13,  2.28s/img][A
+Extracting features@t:   0%|          | 9/1854 [00:21<1:09:44,  2.27s/img][A
+Extracting features@t:   1%|          | 10/1854 [00:23<1:09:31,  2.26s/img][A
+Extracting features@t:   1%|          | 11/1854 [00:25<1:09:25,  2.26s/img][A
+Extracting features@t:   1%|          | 12/1854 [00:28<1:09:19,  2.26s/img][A
+Extracting features@t:   1%|          | 13/1854 [00:30<1:09:20,  2.26s/img][A
+Extracting features@t:   1%|          | 14/1854 [00:32<1:09:22,  2.26s/img][A
+Extracting features@t:   1%|          | 15/1854 [00:34<1:09:18,  2.26s/img][A
+Extracting features@t:   1%|          | 16/1854 [00:37<1:09:15,  2.26s/img][A
+Extracting features@t:   1%|          | 17/1854 [00:39<1:09:17,  2.26s/img][A
+Extracting features@t:   1%|          | 18/1854 [00:41<1:09:17,  2.26s/img][A
+Extracting features@t:   1%|          | 19/1854 [00:43<1:09:22,  2.27s/img][A
+Extracting features@t:   1%|          | 20/1854 [00:46<1:09:26,  2.27s/img][A
+Extracting features@t:   1%|          | 21/1854 [00:48<1:09:27,  2.27s/img][A
+Extracting features@t:   1%|          | 22/1854 [00:50<1:09:30,  2.28s/img][A
+Extracting features@t:   1%|          | 23/1854 [00:53<1:09:31,  2.28s/img][A
+Extracting features@t:   1%|▏         | 24/1854 [00:55<1:09:31,  2.28s/img][A
+Extracting features@t:   1%|▏         | 25/1854 [00:57<1:09:31,  2.28s/img][A
+Extracting features@t:   1%|▏         | 26/1854 [00:59<1:09:32,  2.28s/img][A
+Extracting features@t:   1%|▏         | 27/1854 [01:02<1:09:33,  2.28s/img][A
+Extracting features@t:   2%|▏         | 28/1854 [01:04<1:09:29,  2.28s/img][A
+Extracting features@t:   2%|▏         | 29/1854 [01:06<1:09:32,  2.29s/img][A
+Extracting features@t:   2%|▏         | 30/1854 [01:09<1:09:30,  2.29s/img][A
+Extracting features@t:   2%|▏         | 31/1854 [01:11<1:09:32,  2.29s/img][A
+Extracting features@t:   2%|▏         | 32/1854 [01:13<1:09:36,  2.29s/img][A
+Extracting features@t:   2%|▏         | 33/1854 [01:15<1:09:34,  2.29s/img][A
+Extracting features@t:   2%|▏         | 34/1854 [01:18<1:09:30,  2.29s/img][A
+Extracting features@t:   2%|▏         | 35/1854 [01:20<1:09:32,  2.29s/img][A
+Extracting features@t:   2%|▏         | 36/1854 [01:22<1:09:28,  2.29s/img][A
+Extracting features@t:   2%|▏         | 37/1854 [01:25<1:09:28,  2.29s/img][A
+Extracting features@t:   2%|▏         | 38/1854 [01:27<1:09:29,  2.30s/img][A
+Extracting features@t:   2%|▏         | 39/1854 [01:29<1:09:29,  2.30s/img][A
+Extracting features@t:   2%|▏         | 40/1854 [01:32<1:09:27,  2.30s/img][A
+Extracting features@t:   2%|▏         | 41/1854 [01:34<1:09:27,  2.30s/img][A
+Extracting features@t:   2%|▏         | 42/1854 [01:36<1:09:28,  2.30s/img][A
+Extracting features@t:   2%|▏         | 43/1854 [01:38<1:09:28,  2.30s/img][A
+Extracting features@t:   2%|▏         | 44/1854 [01:41<1:09:27,  2.30s/img][A
+Extracting features@t:   2%|▏         | 45/1854 [01:43<1:09:26,  2.30s/img][A
+Extracting features@t:   2%|▏         | 46/1854 [01:45<1:09:23,  2.30s/img][A
+Extracting features@t:   3%|▎         | 47/1854 [01:48<1:09:23,  2.30s/img][A
+Extracting features@t:   3%|▎         | 48/1854 [01:50<1:09:18,  2.30s/img][A
+Extracting features@t:   3%|▎         | 49/1854 [01:52<1:09:16,  2.30s/img][A
+Extracting features@t:   3%|▎         | 50/1854 [01:55<1:09:16,  2.30s/img][A
+Extracting features@t:   3%|▎         | 51/1854 [01:57<1:09:12,  2.30s/img][A
+Extracting features@t:   3%|▎         | 52/1854 [01:59<1:09:13,  2.30s/img][A
+Extracting features@t:   3%|▎         | 53/1854 [02:01<1:09:08,  2.30s/img][A
+Extracting features@t:   3%|▎         | 54/1854 [02:04<1:09:10,  2.31s/img][A
+Extracting features@t:   3%|▎         | 55/1854 [02:06<1:09:08,  2.31s/img][A
+Extracting features@t:   3%|▎         | 56/1854 [02:08<1:09:00,  2.30s/img][A
+Extracting features@t:   3%|▎         | 57/1854 [02:11<1:09:00,  2.30s/img][A
+Extracting features@t:   3%|▎         | 58/1854 [02:13<1:08:55,  2.30s/img][A
+Extracting features@t:   3%|▎         | 59/1854 [02:15<1:08:51,  2.30s/img][A
+Extracting features@t:   3%|▎         | 60/1854 [02:18<1:08:54,  2.30s/img][A
+Extracting features@t:   3%|▎         | 61/1854 [02:20<1:08:53,  2.31s/img][A
+Extracting features@t:   3%|▎         | 62/1854 [02:22<1:08:48,  2.30s/img][A
+Extracting features@t:   3%|▎         | 63/1854 [02:25<1:09:01,  2.31s/img][A
+Extracting features@t:   3%|▎         | 64/1854 [02:27<1:09:11,  2.32s/img][A
+Extracting features@t:   4%|▎         | 65/1854 [02:29<1:09:13,  2.32s/img][A
+Extracting features@t:   4%|▎         | 66/1854 [02:32<1:09:23,  2.33s/img][A
+Extracting features@t:   4%|▎         | 67/1854 [02:34<1:09:09,  2.32s/img][A
+Extracting features@t:   4%|▎         | 68/1854 [02:36<1:08:59,  2.32s/img][A
+Extracting features@t:   4%|▎         | 69/1854 [02:38<1:08:49,  2.31s/img][A
+Extracting features@t:   4%|▍         | 70/1854 [02:41<1:08:41,  2.31s/img][A
+Extracting features@t:   4%|▍         | 71/1854 [02:43<1:08:41,  2.31s/img][A
+Extracting features@t:   4%|▍         | 72/1854 [02:45<1:08:39,  2.31s/img][A
+Extracting features@t:   4%|▍         | 73/1854 [02:48<1:08:34,  2.31s/img][A
+Extracting features@t:   4%|▍         | 74/1854 [02:50<1:08:31,  2.31s/img][A
+Extracting features@t:   4%|▍         | 75/1854 [02:52<1:08:27,  2.31s/img][A
+Extracting features@t:   4%|▍         | 76/1854 [02:55<1:08:21,  2.31s/img][A
+Extracting features@t:   4%|▍         | 77/1854 [02:57<1:08:21,  2.31s/img][A
+Extracting features@t:   4%|▍         | 78/1854 [02:59<1:08:21,  2.31s/img][A
+Extracting features@t:   4%|▍         | 79/1854 [03:02<1:08:18,  2.31s/img][A
+Extracting features@t:   4%|▍         | 80/1854 [03:04<1:08:14,  2.31s/img][A
+Extracting features@t:   4%|▍         | 81/1854 [03:06<1:08:13,  2.31s/img][A
+Extracting features@t:   4%|▍         | 82/1854 [03:08<1:08:12,  2.31s/img][A
+Extracting features@t:   4%|▍         | 83/1854 [03:11<1:08:12,  2.31s/img][A
+Extracting features@t:   5%|▍         | 84/1854 [03:13<1:08:11,  2.31s/img][A
+Extracting features@t:   5%|▍         | 85/1854 [03:15<1:08:07,  2.31s/img][A
+Extracting features@t:   5%|▍         | 86/1854 [03:18<1:08:06,  2.31s/img][A
+Extracting features@t:   5%|▍         | 87/1854 [03:20<1:08:03,  2.31s/img][A
+Extracting features@t:   5%|▍         | 88/1854 [03:22<1:08:00,  2.31s/img][A
+Extracting features@t:   5%|▍         | 89/1854 [03:25<1:07:54,  2.31s/img][A
+Extracting features@t:   5%|▍         | 90/1854 [03:27<1:07:54,  2.31s/img][A
+Extracting features@t:   5%|▍         | 91/1854 [03:29<1:07:50,  2.31s/img][A
+Extracting features@t:   5%|▍         | 92/1854 [03:32<1:07:48,  2.31s/img][A
+Extracting features@t:   5%|▌         | 93/1854 [03:34<1:07:44,  2.31s/img][A
+Extracting features@t:   5%|▌         | 94/1854 [03:36<1:07:39,  2.31s/img][A
+Extracting features@t:   5%|▌         | 95/1854 [03:39<1:07:36,  2.31s/img][A
+Extracting features@t:   5%|▌         | 96/1854 [03:41<1:07:32,  2.31s/img][A
+Extracting features@t:   5%|▌         | 97/1854 [03:43<1:07:33,  2.31s/img][A
+Extracting features@t:   5%|▌         | 98/1854 [03:45<1:07:33,  2.31s/img][A
+Extracting features@t:   5%|▌         | 99/1854 [03:48<1:07:32,  2.31s/img][A
+Extracting features@t:   5%|▌         | 100/1854 [03:50<1:07:32,  2.31s/img][A
+Extracting features@t:   5%|▌         | 101/1854 [03:52<1:07:29,  2.31s/img][A
+Extracting features@t:   6%|▌         | 102/1854 [03:55<1:07:24,  2.31s/img][A
+Extracting features@t:   6%|▌         | 103/1854 [03:57<1:07:23,  2.31s/img][A
+Extracting features@t:   6%|▌         | 104/1854 [03:59<1:07:19,  2.31s/img][A
+Extracting features@t:   6%|▌         | 105/1854 [04:02<1:07:17,  2.31s/img][A
+Extracting features@t:   6%|▌         | 106/1854 [04:04<1:07:16,  2.31s/img][A
+Extracting features@t:   6%|▌         | 107/1854 [04:06<1:07:13,  2.31s/img][A
+Extracting features@t:   6%|▌         | 108/1854 [04:09<1:07:13,  2.31s/img][A
+Extracting features@t:   6%|▌         | 109/1854 [04:11<1:07:08,  2.31s/img][A
+Extracting features@t:   6%|▌         | 110/1854 [04:13<1:07:07,  2.31s/img][A
+Extracting features@t:   6%|▌         | 111/1854 [04:15<1:07:03,  2.31s/img][A
+Extracting features@t:   6%|▌         | 112/1854 [04:18<1:07:03,  2.31s/img][A
+Extracting features@t:   6%|▌         | 113/1854 [04:20<1:07:01,  2.31s/img][A
+Extracting features@t:   6%|▌         | 114/1854 [04:22<1:06:56,  2.31s/img][A
+Extracting features@t:   6%|▌         | 115/1854 [04:25<1:06:55,  2.31s/img][A
+Extracting features@t:   6%|▋         | 116/1854 [04:27<1:06:54,  2.31s/img][A
+Extracting features@t:   6%|▋         | 117/1854 [04:29<1:06:54,  2.31s/img][A
+Extracting features@t:   6%|▋         | 118/1854 [04:32<1:06:50,  2.31s/img][A
+Extracting features@t:   6%|▋         | 119/1854 [04:34<1:06:45,  2.31s/img][A
+Extracting features@t:   6%|▋         | 120/1854 [04:36<1:06:44,  2.31s/img][A
+Extracting features@t:   7%|▋         | 121/1854 [04:39<1:06:46,  2.31s/img][A
+Extracting features@t:   7%|▋         | 122/1854 [04:41<1:06:45,  2.31s/img][A
+Extracting features@t:   7%|▋         | 123/1854 [04:43<1:06:41,  2.31s/img][A
+Extracting features@t:   7%|▋         | 124/1854 [04:45<1:06:40,  2.31s/img][A
+Extracting features@t:   7%|▋         | 125/1854 [04:48<1:06:38,  2.31s/img][A
+Extracting features@t:   7%|▋         | 126/1854 [04:50<1:06:36,  2.31s/img][A
+Extracting features@t:   7%|▋         | 127/1854 [04:52<1:06:33,  2.31s/img][A
+Extracting features@t:   7%|▋         | 128/1854 [04:55<1:06:29,  2.31s/img][A
+Extracting features@t:   7%|▋         | 129/1854 [04:57<1:06:23,  2.31s/img][A
+Extracting features@t:   7%|▋         | 130/1854 [04:59<1:06:23,  2.31s/img][A
+Extracting features@t:   7%|▋         | 131/1854 [05:02<1:06:22,  2.31s/img][A
+Extracting features@t:   7%|▋         | 132/1854 [05:04<1:06:19,  2.31s/img][A
+Extracting features@t:   7%|▋         | 133/1854 [05:06<1:06:15,  2.31s/img][A
+Extracting features@t:   7%|▋         | 134/1854 [05:09<1:06:14,  2.31s/img][A
+Extracting features@t:   7%|▋         | 135/1854 [05:11<1:06:12,  2.31s/img][A
+Extracting features@t:   7%|▋         | 136/1854 [05:13<1:06:06,  2.31s/img][A
+Extracting features@t:   7%|▋         | 137/1854 [05:16<1:06:04,  2.31s/img][A
+Extracting features@t:   7%|▋         | 138/1854 [05:18<1:06:03,  2.31s/img][A
+Extracting features@t:   7%|▋         | 139/1854 [05:20<1:06:01,  2.31s/img][A
+Extracting features@t:   8%|▊         | 140/1854 [05:22<1:05:59,  2.31s/img][A
+Extracting features@t:   8%|▊         | 141/1854 [05:25<1:05:56,  2.31s/img][A
+Extracting features@t:   8%|▊         | 142/1854 [05:27<1:05:51,  2.31s/img][A
+Extracting features@t:   8%|▊         | 143/1854 [05:29<1:05:53,  2.31s/img][A
+Extracting features@t:   8%|▊         | 144/1854 [05:32<1:05:51,  2.31s/img][A
+Extracting features@t:   8%|▊         | 145/1854 [05:34<1:05:48,  2.31s/img][A
+Extracting features@t:   8%|▊         | 146/1854 [05:36<1:05:44,  2.31s/img][A
+Extracting features@t:   8%|▊         | 147/1854 [05:39<1:05:39,  2.31s/img][A
+Extracting features@t:   8%|▊         | 148/1854 [05:41<1:05:34,  2.31s/img][A
+Extracting features@t:   8%|▊         | 149/1854 [05:43<1:05:37,  2.31s/img][A
+Extracting features@t:   8%|▊         | 150/1854 [05:46<1:05:36,  2.31s/img][A
+Extracting features@t:   8%|▊         | 151/1854 [05:48<1:05:31,  2.31s/img][A
+Extracting features@t:   8%|▊         | 152/1854 [05:50<1:05:32,  2.31s/img][A
+Extracting features@t:   8%|▊         | 153/1854 [05:52<1:05:28,  2.31s/img][A
+Extracting features@t:   8%|▊         | 154/1854 [05:55<1:05:24,  2.31s/img][A
+Extracting features@t:   8%|▊         | 155/1854 [05:57<1:05:25,  2.31s/img][A
+Extracting features@t:   8%|▊         | 156/1854 [05:59<1:05:20,  2.31s/img][A
+Extracting features@t:   8%|▊         | 157/1854 [06:02<1:05:17,  2.31s/img][A
+Extracting features@t:   9%|▊         | 158/1854 [06:04<1:05:13,  2.31s/img][A
+Extracting features@t:   9%|▊         | 159/1854 [06:06<1:05:10,  2.31s/img][A
+Extracting features@t:   9%|▊         | 160/1854 [06:09<1:05:09,  2.31s/img][A
+Extracting features@t:   9%|▊         | 161/1854 [06:11<1:05:08,  2.31s/img][A
+Extracting features@t:   9%|▊         | 162/1854 [06:13<1:05:09,  2.31s/img][A
+Extracting features@t:   9%|▉         | 163/1854 [06:16<1:05:04,  2.31s/img][A
+Extracting features@t:   9%|▉         | 164/1854 [06:18<1:05:00,  2.31s/img][A
+Extracting features@t:   9%|▉         | 165/1854 [06:20<1:04:59,  2.31s/img][A
+Extracting features@t:   9%|▉         | 166/1854 [06:22<1:04:59,  2.31s/img][A
+Extracting features@t:   9%|▉         | 167/1854 [06:25<1:04:55,  2.31s/img][A
+Extracting features@t:   9%|▉         | 168/1854 [06:27<1:04:53,  2.31s/img][A
+Extracting features@t:   9%|▉         | 169/1854 [06:29<1:04:51,  2.31s/img][A
+Extracting features@t:   9%|▉         | 170/1854 [06:32<1:04:48,  2.31s/img][A
+Extracting features@t:   9%|▉         | 171/1854 [06:34<1:04:46,  2.31s/img][A
+Extracting features@t:   9%|▉         | 172/1854 [06:36<1:04:45,  2.31s/img][A
+Extracting features@t:   9%|▉         | 173/1854 [06:39<1:04:40,  2.31s/img][A
+Extracting features@t:   9%|▉         | 174/1854 [06:41<1:04:38,  2.31s/img][A
+Extracting features@t:   9%|▉         | 175/1854 [06:43<1:04:37,  2.31s/img][A
+Extracting features@t:   9%|▉         | 176/1854 [06:46<1:04:33,  2.31s/img][A
+Extracting features@t:  10%|▉         | 177/1854 [06:48<1:04:30,  2.31s/img][A
+Extracting features@t:  10%|▉         | 178/1854 [06:50<1:04:28,  2.31s/img][A
+Extracting features@t:  10%|▉         | 179/1854 [06:53<1:04:28,  2.31s/img][A
+Extracting features@t:  10%|▉         | 180/1854 [06:55<1:04:27,  2.31s/img][A
+Extracting features@t:  10%|▉         | 181/1854 [06:57<1:04:26,  2.31s/img][A
+Extracting features@t:  10%|▉         | 182/1854 [06:59<1:04:23,  2.31s/img][A
+Extracting features@t:  10%|▉         | 183/1854 [07:02<1:04:21,  2.31s/img][A
+Extracting features@t:  10%|▉         | 184/1854 [07:04<1:04:19,  2.31s/img][A
+Extracting features@t:  10%|▉         | 185/1854 [07:06<1:04:14,  2.31s/img][A
+Extracting features@t:  10%|█         | 186/1854 [07:09<1:04:09,  2.31s/img][A
+Extracting features@t:  10%|█         | 187/1854 [07:11<1:04:08,  2.31s/img][A
+Extracting features@t:  10%|█         | 188/1854 [07:13<1:04:07,  2.31s/img][A
+Extracting features@t:  10%|█         | 189/1854 [07:16<1:04:01,  2.31s/img][A
+Extracting features@t:  10%|█         | 190/1854 [07:18<1:04:01,  2.31s/img][A
+Extracting features@t:  10%|█         | 191/1854 [07:20<1:03:59,  2.31s/img][A
+Extracting features@t:  10%|█         | 192/1854 [07:23<1:03:57,  2.31s/img][A
+Extracting features@t:  10%|█         | 193/1854 [07:25<1:03:54,  2.31s/img][A
+Extracting features@t:  10%|█         | 194/1854 [07:27<1:03:48,  2.31s/img][A
+Extracting features@t:  11%|█         | 195/1854 [07:29<1:03:49,  2.31s/img][A
+Extracting features@t:  11%|█         | 196/1854 [07:32<1:03:49,  2.31s/img][A
+Extracting features@t:  11%|█         | 197/1854 [07:34<1:03:48,  2.31s/img][A
+Extracting features@t:  11%|█         | 198/1854 [07:36<1:03:48,  2.31s/img][A
+Extracting features@t:  11%|█         | 199/1854 [07:39<1:03:45,  2.31s/img][A
+Extracting features@t:  11%|█         | 200/1854 [07:41<1:03:44,  2.31s/img][A
+Extracting features@t:  11%|█         | 201/1854 [07:43<1:03:42,  2.31s/img][A
+Extracting features@t:  11%|█         | 202/1854 [07:46<1:03:38,  2.31s/img][A
+Extracting features@t:  11%|█         | 203/1854 [07:48<1:03:36,  2.31s/img][A
+Extracting features@t:  11%|█         | 204/1854 [07:50<1:03:35,  2.31s/img][A
+Extracting features@t:  11%|█         | 205/1854 [07:53<1:03:31,  2.31s/img][A
+Extracting features@t:  11%|█         | 206/1854 [07:55<1:03:25,  2.31s/img][A
+Extracting features@t:  11%|█         | 207/1854 [07:57<1:03:25,  2.31s/img][A
+Extracting features@t:  11%|█         | 208/1854 [08:00<1:03:23,  2.31s/img][A
+Extracting features@t:  11%|█▏        | 209/1854 [08:02<1:03:20,  2.31s/img][A
+Extracting features@t:  11%|█▏        | 210/1854 [08:04<1:03:20,  2.31s/img][A
+Extracting features@t:  11%|█▏        | 211/1854 [08:06<1:03:18,  2.31s/img][A
+Extracting features@t:  11%|█▏        | 212/1854 [08:09<1:03:15,  2.31s/img][A
+Extracting features@t:  11%|█▏        | 213/1854 [08:11<1:03:13,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 214/1854 [08:13<1:03:10,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 215/1854 [08:16<1:03:04,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 216/1854 [08:18<1:03:04,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 217/1854 [08:20<1:02:58,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 218/1854 [08:23<1:02:58,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 219/1854 [08:25<1:02:52,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 220/1854 [08:27<1:02:52,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 221/1854 [08:30<1:02:52,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 222/1854 [08:32<1:02:50,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 223/1854 [08:34<1:02:50,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 224/1854 [08:36<1:02:47,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 225/1854 [08:39<1:02:44,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 226/1854 [08:41<1:02:42,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 227/1854 [08:43<1:02:40,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 228/1854 [08:46<1:02:35,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 229/1854 [08:48<1:02:30,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 230/1854 [08:50<1:02:29,  2.31s/img][A
+Extracting features@t:  12%|█▏        | 231/1854 [08:53<1:02:28,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 232/1854 [08:55<1:02:27,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 233/1854 [08:57<1:02:25,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 234/1854 [09:00<1:02:22,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 235/1854 [09:02<1:02:21,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 236/1854 [09:04<1:02:19,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 237/1854 [09:07<1:02:18,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 238/1854 [09:09<1:02:15,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 239/1854 [09:11<1:02:11,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 240/1854 [09:13<1:02:10,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 241/1854 [09:16<1:02:07,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 242/1854 [09:18<1:02:06,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 243/1854 [09:20<1:02:02,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 244/1854 [09:23<1:01:59,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 245/1854 [09:25<1:01:56,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 246/1854 [09:27<1:01:53,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 247/1854 [09:30<1:01:53,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 248/1854 [09:32<1:01:51,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 249/1854 [09:34<1:01:48,  2.31s/img][A
+Extracting features@t:  13%|█▎        | 250/1854 [09:37<1:01:47,  2.31s/img][A
+Extracting features@t:  14%|█▎        | 251/1854 [09:39<1:01:45,  2.31s/img][A
+Extracting features@t:  14%|█▎        | 252/1854 [09:41<1:01:42,  2.31s/img][A
+Extracting features@t:  14%|█▎        | 253/1854 [09:43<1:01:39,  2.31s/img][A
+Extracting features@t:  14%|█▎        | 254/1854 [09:46<1:01:36,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 255/1854 [09:48<1:01:33,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 256/1854 [09:50<1:01:33,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 257/1854 [09:53<1:01:30,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 258/1854 [09:55<1:01:28,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 259/1854 [09:57<1:01:25,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 260/1854 [10:00<1:01:20,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 261/1854 [10:02<1:01:16,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 262/1854 [10:04<1:01:16,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 263/1854 [10:07<1:01:13,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 264/1854 [10:09<1:01:12,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 265/1854 [10:11<1:01:08,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 266/1854 [10:13<1:01:04,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 267/1854 [10:16<1:00:59,  2.31s/img][A
+Extracting features@t:  14%|█▍        | 268/1854 [10:18<1:00:56,  2.31s/img][A
+Extracting features@t:  15%|█▍        | 269/1854 [10:20<1:00:53,  2.31s/img][A
+Extracting features@t:  15%|█▍        | 270/1854 [10:23<1:00:49,  2.30s/img][A
+Extracting features@t:  15%|█▍        | 271/1854 [10:25<1:00:48,  2.30s/img][A
+Extracting features@t:  15%|█▍        | 272/1854 [10:27<1:00:49,  2.31s/img][A
+Extracting features@t:  15%|█▍        | 273/1854 [10:30<1:00:47,  2.31s/img][A
+Extracting features@t:  15%|█▍        | 274/1854 [10:32<1:00:46,  2.31s/img][A
+Extracting features@t:  15%|█▍        | 275/1854 [10:34<1:00:43,  2.31s/img][A
+Extracting features@t:  15%|█▍        | 276/1854 [10:37<1:00:43,  2.31s/img][A
+Extracting features@t:  15%|█▍        | 277/1854 [10:39<1:00:41,  2.31s/img][A
+Extracting features@t:  15%|█▍        | 278/1854 [10:41<1:00:39,  2.31s/img][A
+Extracting features@t:  15%|█▌        | 279/1854 [10:43<1:00:37,  2.31s/img][A
+Extracting features@t:  15%|█▌        | 280/1854 [10:46<1:00:35,  2.31s/img][A
+Extracting features@t:  15%|█▌        | 281/1854 [10:48<1:00:30,  2.31s/img][A
+Extracting features@t:  15%|█▌        | 282/1854 [10:50<1:00:28,  2.31s/img][A
+Extracting features@t:  15%|█▌        | 283/1854 [10:53<1:00:26,  2.31s/img][A
+Extracting features@t:  15%|█▌        | 284/1854 [10:55<1:00:24,  2.31s/img][A
+Extracting features@t:  15%|█▌        | 285/1854 [10:57<1:00:22,  2.31s/img][A
+Extracting features@t:  15%|█▌        | 286/1854 [11:00<1:00:21,  2.31s/img][A
+Extracting features@t:  15%|█▌        | 287/1854 [11:02<1:00:18,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 288/1854 [11:04<1:00:16,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 289/1854 [11:07<1:00:13,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 290/1854 [11:09<1:00:10,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 291/1854 [11:11<1:00:07,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 292/1854 [11:13<1:00:03,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 293/1854 [11:16<59:58,  2.31s/img]  [A
+Extracting features@t:  16%|█▌        | 294/1854 [11:18<59:56,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 295/1854 [11:20<59:53,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 296/1854 [11:23<59:51,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 297/1854 [11:25<59:49,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 298/1854 [11:27<59:45,  2.30s/img][A
+Extracting features@t:  16%|█▌        | 299/1854 [11:30<59:44,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 300/1854 [11:32<59:42,  2.31s/img][A
+Extracting features@t:  16%|█▌        | 301/1854 [11:34<59:40,  2.31s/img][A
+Extracting features@t:  16%|█▋        | 302/1854 [11:37<59:36,  2.30s/img][A
+Extracting features@t:  16%|█▋        | 303/1854 [11:39<59:35,  2.31s/img][A
+Extracting features@t:  16%|█▋        | 304/1854 [11:41<59:33,  2.31s/img][A
+Extracting features@t:  16%|█▋        | 305/1854 [11:43<59:30,  2.30s/img][A
+Extracting features@t:  17%|█▋        | 306/1854 [11:46<59:27,  2.30s/img][A
+Extracting features@t:  17%|█▋        | 307/1854 [11:48<59:24,  2.30s/img][A
+Extracting features@t:  17%|█▋        | 308/1854 [11:50<59:22,  2.30s/img][A
+Extracting features@t:  17%|█▋        | 309/1854 [11:53<59:20,  2.30s/img][A
+Extracting features@t:  17%|█▋        | 310/1854 [11:55<59:18,  2.30s/img][A
+Extracting features@t:  17%|█▋        | 311/1854 [11:57<59:16,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 312/1854 [12:00<59:17,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 313/1854 [12:02<59:14,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 314/1854 [12:04<59:23,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 315/1854 [12:07<59:15,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 316/1854 [12:09<59:11,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 317/1854 [12:11<59:08,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 318/1854 [12:13<59:05,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 319/1854 [12:16<59:00,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 320/1854 [12:18<58:57,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 321/1854 [12:20<58:55,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 322/1854 [12:23<58:53,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 323/1854 [12:25<58:50,  2.31s/img][A
+Extracting features@t:  17%|█▋        | 324/1854 [12:27<58:47,  2.31s/img][A
+Extracting features@t:  18%|█▊        | 325/1854 [12:30<58:46,  2.31s/img][A
+Extracting features@t:  18%|█▊        | 326/1854 [12:32<58:43,  2.31s/img][A
+Extracting features@t:  18%|█▊        | 327/1854 [12:34<58:40,  2.31s/img][A
+Extracting features@t:  18%|█▊        | 328/1854 [12:37<58:37,  2.31s/img][A
+Extracting features@t:  18%|█▊        | 329/1854 [12:39<58:35,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 330/1854 [12:41<58:33,  2.31s/img][A
+Extracting features@t:  18%|█▊        | 331/1854 [12:43<58:28,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 332/1854 [12:46<58:24,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 333/1854 [12:48<58:23,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 334/1854 [12:50<58:20,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 335/1854 [12:53<58:19,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 336/1854 [12:55<58:16,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 337/1854 [12:57<58:12,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 338/1854 [13:00<58:09,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 339/1854 [13:02<58:07,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 340/1854 [13:04<58:06,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 341/1854 [13:06<58:05,  2.30s/img][A
+Extracting features@t:  18%|█▊        | 342/1854 [13:09<58:06,  2.31s/img][A
+Extracting features@t:  19%|█▊        | 343/1854 [13:11<58:03,  2.31s/img][A
+Extracting features@t:  19%|█▊        | 344/1854 [13:13<58:00,  2.31s/img][A
+Extracting features@t:  19%|█▊        | 345/1854 [13:16<57:56,  2.30s/img][A
+Extracting features@t:  19%|█▊        | 346/1854 [13:18<57:54,  2.30s/img][A
+Extracting features@t:  19%|█▊        | 347/1854 [13:20<57:52,  2.30s/img][A
+Extracting features@t:  19%|█▉        | 348/1854 [13:23<57:51,  2.30s/img][A
+Extracting features@t:  19%|█▉        | 349/1854 [13:25<57:50,  2.31s/img][A
+Extracting features@t:  19%|█▉        | 350/1854 [13:27<57:47,  2.31s/img][A
+Extracting features@t:  19%|█▉        | 351/1854 [13:30<57:45,  2.31s/img][A
+Extracting features@t:  19%|█▉        | 352/1854 [13:32<57:42,  2.31s/img][A
+Extracting features@t:  19%|█▉        | 353/1854 [13:34<57:39,  2.30s/img][A
+Extracting features@t:  19%|█▉        | 354/1854 [13:36<57:35,  2.30s/img][A
+Extracting features@t:  19%|█▉        | 355/1854 [13:39<57:34,  2.30s/img][A
+Extracting features@t:  19%|█▉        | 356/1854 [13:41<57:32,  2.30s/img][A
+Extracting features@t:  19%|█▉        | 357/1854 [13:43<57:31,  2.31s/img][A
+Extracting features@t:  19%|█▉        | 358/1854 [13:46<57:28,  2.30s/img][A
+Extracting features@t:  19%|█▉        | 359/1854 [13:48<57:24,  2.30s/img][A
+Extracting features@t:  19%|█▉        | 360/1854 [13:50<57:20,  2.30s/img][A
+Extracting features@t:  19%|█▉        | 361/1854 [13:53<57:19,  2.30s/img][A
+Extracting features@t:  20%|█▉        | 362/1854 [13:55<57:17,  2.30s/img][A
+Extracting features@t:  20%|█▉        | 363/1854 [13:57<57:17,  2.31s/img][A
+Extracting features@t:  20%|█▉        | 364/1854 [13:59<57:14,  2.31s/img][A
+Extracting features@t:  20%|█▉        | 365/1854 [14:02<57:10,  2.30s/img][A
+Extracting features@t:  20%|█▉        | 366/1854 [14:04<57:07,  2.30s/img][A
+Extracting features@t:  20%|█▉        | 367/1854 [14:06<57:06,  2.30s/img][A
+Extracting features@t:  20%|█▉        | 368/1854 [14:09<57:05,  2.30s/img][A
+Extracting features@t:  20%|█▉        | 369/1854 [14:11<57:02,  2.30s/img][A
+Extracting features@t:  20%|█▉        | 370/1854 [14:13<57:00,  2.30s/img][A
+Extracting features@t:  20%|██        | 371/1854 [14:16<56:57,  2.30s/img][A
+Extracting features@t:  20%|██        | 372/1854 [14:18<56:55,  2.30s/img][A
+Extracting features@t:  20%|██        | 373/1854 [14:20<56:53,  2.30s/img][A
+Extracting features@t:  20%|██        | 374/1854 [14:23<56:51,  2.31s/img][A
+Extracting features@t:  20%|██        | 375/1854 [14:25<56:49,  2.31s/img][A
+Extracting features@t:  20%|██        | 376/1854 [14:27<56:47,  2.31s/img][A
+Extracting features@t:  20%|██        | 377/1854 [14:29<56:44,  2.30s/img][A
+Extracting features@t:  20%|██        | 378/1854 [14:32<56:39,  2.30s/img][A
+Extracting features@t:  20%|██        | 379/1854 [14:34<56:36,  2.30s/img][A
+Extracting features@t:  20%|██        | 380/1854 [14:36<56:34,  2.30s/img][A
+Extracting features@t:  21%|██        | 381/1854 [14:39<56:31,  2.30s/img][A
+Extracting features@t:  21%|██        | 382/1854 [14:41<56:29,  2.30s/img][A
+Extracting features@t:  21%|██        | 383/1854 [14:43<56:28,  2.30s/img][A
+Extracting features@t:  21%|██        | 384/1854 [14:46<56:24,  2.30s/img][A
+Extracting features@t:  21%|██        | 385/1854 [14:48<56:19,  2.30s/img][A
+Extracting features@t:  21%|██        | 386/1854 [14:50<56:21,  2.30s/img][A
+Extracting features@t:  21%|██        | 387/1854 [14:52<56:19,  2.30s/img][A
+Extracting features@t:  21%|██        | 388/1854 [14:55<56:16,  2.30s/img][A
+Extracting features@t:  21%|██        | 389/1854 [14:57<56:15,  2.30s/img][A
+Extracting features@t:  21%|██        | 390/1854 [14:59<56:12,  2.30s/img][A
+Extracting features@t:  21%|██        | 391/1854 [15:02<56:10,  2.30s/img][A
+Extracting features@t:  21%|██        | 392/1854 [15:04<56:09,  2.30s/img][A
+Extracting features@t:  21%|██        | 393/1854 [15:06<56:08,  2.31s/img][A
+Extracting features@t:  21%|██▏       | 394/1854 [15:09<56:05,  2.31s/img][A
+Extracting features@t:  21%|██▏       | 395/1854 [15:11<56:02,  2.30s/img][A
+Extracting features@t:  21%|██▏       | 396/1854 [15:13<56:00,  2.30s/img][A
+Extracting features@t:  21%|██▏       | 397/1854 [15:15<55:57,  2.30s/img][A
+Extracting features@t:  21%|██▏       | 398/1854 [15:18<55:51,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 399/1854 [15:20<55:49,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 400/1854 [15:22<55:47,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 401/1854 [15:25<55:46,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 402/1854 [15:27<55:44,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 403/1854 [15:29<55:43,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 404/1854 [15:32<55:41,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 405/1854 [15:34<55:39,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 406/1854 [15:36<55:38,  2.31s/img][A
+Extracting features@t:  22%|██▏       | 407/1854 [15:39<55:36,  2.31s/img][A
+Extracting features@t:  22%|██▏       | 408/1854 [15:41<55:33,  2.31s/img][A
+Extracting features@t:  22%|██▏       | 409/1854 [15:43<55:30,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 410/1854 [15:45<55:25,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 411/1854 [15:48<55:22,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 412/1854 [15:50<55:20,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 413/1854 [15:52<55:19,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 414/1854 [15:55<55:18,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 415/1854 [15:57<55:15,  2.30s/img][A
+Extracting features@t:  22%|██▏       | 416/1854 [15:59<55:14,  2.31s/img][A
+Extracting features@t:  22%|██▏       | 417/1854 [16:02<55:12,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 418/1854 [16:04<55:09,  2.30s/img][A
+Extracting features@t:  23%|██▎       | 419/1854 [16:06<55:04,  2.30s/img][A
+Extracting features@t:  23%|██▎       | 420/1854 [16:08<55:05,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 421/1854 [16:11<55:03,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 422/1854 [16:13<55:01,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 423/1854 [16:15<54:59,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 424/1854 [16:18<54:55,  2.30s/img][A
+Extracting features@t:  23%|██▎       | 425/1854 [16:20<54:53,  2.30s/img][A
+Extracting features@t:  23%|██▎       | 426/1854 [16:22<54:52,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 427/1854 [16:25<54:50,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 428/1854 [16:27<54:48,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 429/1854 [16:29<54:45,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 430/1854 [16:32<54:42,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 431/1854 [16:34<54:40,  2.31s/img][A
+Extracting features@t:  23%|██▎       | 432/1854 [16:36<54:37,  2.30s/img][A
+Extracting features@t:  23%|██▎       | 433/1854 [16:38<54:33,  2.30s/img][A
+Extracting features@t:  23%|██▎       | 434/1854 [16:41<54:31,  2.30s/img][A
+Extracting features@t:  23%|██▎       | 435/1854 [16:43<54:27,  2.30s/img][A
+Extracting features@t:  24%|██▎       | 436/1854 [16:45<54:26,  2.30s/img][A
+Extracting features@t:  24%|██▎       | 437/1854 [16:48<54:23,  2.30s/img][A
+Extracting features@t:  24%|██▎       | 438/1854 [16:50<54:20,  2.30s/img][A
+Extracting features@t:  24%|██▎       | 439/1854 [16:52<54:18,  2.30s/img][A
+Extracting features@t:  24%|██▎       | 440/1854 [16:55<54:16,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 441/1854 [16:57<54:14,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 442/1854 [16:59<54:11,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 443/1854 [17:01<54:11,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 444/1854 [17:04<54:07,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 445/1854 [17:06<54:03,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 446/1854 [17:08<54:00,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 447/1854 [17:11<53:58,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 448/1854 [17:13<53:57,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 449/1854 [17:15<53:56,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 450/1854 [17:18<53:52,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 451/1854 [17:20<53:50,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 452/1854 [17:22<53:50,  2.30s/img][A
+Extracting features@t:  24%|██▍       | 453/1854 [17:25<54:03,  2.32s/img][A
+Extracting features@t:  24%|██▍       | 454/1854 [17:27<53:58,  2.31s/img][A
+Extracting features@t:  25%|██▍       | 455/1854 [17:29<53:50,  2.31s/img][A
+Extracting features@t:  25%|██▍       | 456/1854 [17:31<53:47,  2.31s/img][A
+Extracting features@t:  25%|██▍       | 457/1854 [17:34<53:44,  2.31s/img][A
+Extracting features@t:  25%|██▍       | 458/1854 [17:36<53:41,  2.31s/img][A
+Extracting features@t:  25%|██▍       | 459/1854 [17:38<53:40,  2.31s/img][A
+Extracting features@t:  25%|██▍       | 460/1854 [17:41<53:36,  2.31s/img][A
+Extracting features@t:  25%|██▍       | 461/1854 [17:43<53:28,  2.30s/img][A
+Extracting features@t:  25%|██▍       | 462/1854 [17:45<53:26,  2.30s/img][A
+Extracting features@t:  25%|██▍       | 463/1854 [17:48<53:25,  2.30s/img][A
+Extracting features@t:  25%|██▌       | 464/1854 [17:50<53:21,  2.30s/img][A
+Extracting features@t:  25%|██▌       | 465/1854 [17:52<53:18,  2.30s/img][A
+Extracting features@t:  25%|██▌       | 466/1854 [17:55<53:16,  2.30s/img][A
+Extracting features@t:  25%|██▌       | 467/1854 [17:57<53:11,  2.30s/img][A
+Extracting features@t:  25%|██▌       | 468/1854 [17:59<53:10,  2.30s/img][A
+Extracting features@t:  25%|██▌       | 469/1854 [18:01<53:06,  2.30s/img][A
+Extracting features@t:  25%|██▌       | 470/1854 [18:04<53:04,  2.30s/img][A
+Extracting features@t:  25%|██▌       | 471/1854 [18:06<53:01,  2.30s/img][A
+Extracting features@t:  25%|██▌       | 472/1854 [18:08<53:07,  2.31s/img][A
+Extracting features@t:  26%|██▌       | 473/1854 [18:11<53:06,  2.31s/img][A
+Extracting features@t:  26%|██▌       | 474/1854 [18:13<53:02,  2.31s/img][A
+Extracting features@t:  26%|██▌       | 475/1854 [18:15<52:59,  2.31s/img][A
+Extracting features@t:  26%|██▌       | 476/1854 [18:18<52:57,  2.31s/img][A
+Extracting features@t:  26%|██▌       | 477/1854 [18:20<52:55,  2.31s/img][A
+Extracting features@t:  26%|██▌       | 478/1854 [18:22<52:49,  2.30s/img][A
+Extracting features@t:  26%|██▌       | 479/1854 [18:24<52:48,  2.30s/img][A
+Extracting features@t:  26%|██▌       | 480/1854 [18:27<52:45,  2.30s/img][A
+Extracting features@t:  26%|██▌       | 481/1854 [18:29<52:43,  2.30s/img][A
+Extracting features@t:  26%|██▌       | 482/1854 [18:31<52:39,  2.30s/img][A
+Extracting features@t:  26%|██▌       | 483/1854 [18:34<52:35,  2.30s/img][A
+Extracting features@t:  26%|██▌       | 484/1854 [18:36<52:34,  2.30s/img][A
+Extracting features@t:  26%|██▌       | 485/1854 [18:38<52:33,  2.30s/img][A
+Extracting features@t:  26%|██▌       | 486/1854 [18:41<52:31,  2.30s/img][A
+Extracting features@t:  26%|██▋       | 487/1854 [18:43<52:28,  2.30s/img][A
+Extracting features@t:  26%|██▋       | 488/1854 [18:45<52:25,  2.30s/img][A
+Extracting features@t:  26%|██▋       | 489/1854 [18:47<52:25,  2.30s/img][A
+Extracting features@t:  26%|██▋       | 490/1854 [18:50<52:22,  2.30s/img][A
+Extracting features@t:  26%|██▋       | 491/1854 [18:52<52:22,  2.31s/img][A
+Extracting features@t:  27%|██▋       | 492/1854 [18:54<52:19,  2.31s/img][A
+Extracting features@t:  27%|██▋       | 493/1854 [18:57<52:15,  2.30s/img][A
+Extracting features@t:  27%|██▋       | 494/1854 [18:59<52:13,  2.30s/img][A
+Extracting features@t:  27%|██▋       | 495/1854 [19:01<52:12,  2.30s/img][A
+Extracting features@t:  27%|██▋       | 496/1854 [19:04<52:09,  2.30s/img][A
+Extracting features@t:  27%|██▋       | 497/1854 [19:06<52:06,  2.30s/img][A
+Extracting features@t:  27%|██▋       | 498/1854 [19:08<52:06,  2.31s/img][A
+Extracting features@t:  27%|██▋       | 499/1854 [19:11<52:05,  2.31s/img][A
+Extracting features@t:  27%|██▋       | 500/1854 [19:13<52:01,  2.31s/img][A
+Extracting features@t:  27%|██▋       | 501/1854 [19:15<51:59,  2.31s/img][A
+Extracting features@t:  27%|██▋       | 502/1854 [19:17<51:55,  2.30s/img][A
+Extracting features@t:  27%|██▋       | 503/1854 [19:20<51:52,  2.30s/img][A
+Extracting features@t:  27%|██▋       | 504/1854 [19:22<51:50,  2.30s/img][A
+Extracting features@t:  27%|██▋       | 505/1854 [19:24<51:49,  2.30s/img][A
+Extracting features@t:  27%|██▋       | 506/1854 [19:27<51:47,  2.31s/img][A
+Extracting features@t:  27%|██▋       | 507/1854 [19:29<51:45,  2.31s/img][A
+Extracting features@t:  27%|██▋       | 508/1854 [19:31<51:43,  2.31s/img][A
+Extracting features@t:  27%|██▋       | 509/1854 [19:34<51:40,  2.31s/img][A
+Extracting features@t:  28%|██▊       | 510/1854 [19:36<51:38,  2.31s/img][A
+Extracting features@t:  28%|██▊       | 511/1854 [19:38<51:35,  2.31s/img][A
+Extracting features@t:  28%|██▊       | 512/1854 [19:41<51:33,  2.31s/img][A
+Extracting features@t:  28%|██▊       | 513/1854 [19:43<51:30,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 514/1854 [19:45<51:28,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 515/1854 [19:47<51:25,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 516/1854 [19:50<51:23,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 517/1854 [19:52<51:22,  2.31s/img][A
+Extracting features@t:  28%|██▊       | 518/1854 [19:54<51:20,  2.31s/img][A
+Extracting features@t:  28%|██▊       | 519/1854 [19:57<51:17,  2.31s/img][A
+Extracting features@t:  28%|██▊       | 520/1854 [19:59<51:14,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 521/1854 [20:01<51:10,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 522/1854 [20:04<51:08,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 523/1854 [20:06<51:06,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 524/1854 [20:08<51:04,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 525/1854 [20:10<51:00,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 526/1854 [20:13<50:57,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 527/1854 [20:15<50:56,  2.30s/img][A
+Extracting features@t:  28%|██▊       | 528/1854 [20:17<50:54,  2.30s/img][A
+Extracting features@t:  29%|██▊       | 529/1854 [20:20<50:51,  2.30s/img][A
+Extracting features@t:  29%|██▊       | 530/1854 [20:22<50:50,  2.30s/img][A
+Extracting features@t:  29%|██▊       | 531/1854 [20:24<50:47,  2.30s/img][A
+Extracting features@t:  29%|██▊       | 532/1854 [20:27<50:43,  2.30s/img][A
+Extracting features@t:  29%|██▊       | 533/1854 [20:29<50:39,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 534/1854 [20:31<50:38,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 535/1854 [20:33<50:38,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 536/1854 [20:36<50:35,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 537/1854 [20:38<50:33,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 538/1854 [20:40<50:31,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 539/1854 [20:43<50:29,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 540/1854 [20:45<50:26,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 541/1854 [20:47<50:24,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 542/1854 [20:50<50:20,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 543/1854 [20:52<50:18,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 544/1854 [20:54<50:17,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 545/1854 [20:57<50:15,  2.30s/img][A
+Extracting features@t:  29%|██▉       | 546/1854 [20:59<50:15,  2.31s/img][A
+Extracting features@t:  30%|██▉       | 547/1854 [21:01<50:13,  2.31s/img][A
+Extracting features@t:  30%|██▉       | 548/1854 [21:03<50:11,  2.31s/img][A
+Extracting features@t:  30%|██▉       | 549/1854 [21:06<50:10,  2.31s/img][A
+Extracting features@t:  30%|██▉       | 550/1854 [21:08<50:06,  2.31s/img][A
+Extracting features@t:  30%|██▉       | 551/1854 [21:10<50:05,  2.31s/img][A
+Extracting features@t:  30%|██▉       | 552/1854 [21:13<50:02,  2.31s/img][A
+Extracting features@t:  30%|██▉       | 553/1854 [21:15<49:59,  2.31s/img][A
+Extracting features@t:  30%|██▉       | 554/1854 [21:17<49:57,  2.31s/img][A
+Extracting features@t:  30%|██▉       | 555/1854 [21:20<49:54,  2.30s/img][A
+Extracting features@t:  30%|██▉       | 556/1854 [21:22<49:48,  2.30s/img][A
+Extracting features@t:  30%|███       | 557/1854 [21:24<49:45,  2.30s/img][A
+Extracting features@t:  30%|███       | 558/1854 [21:26<49:45,  2.30s/img][A
+Extracting features@t:  30%|███       | 559/1854 [21:29<49:43,  2.30s/img][A
+Extracting features@t:  30%|███       | 560/1854 [21:31<49:38,  2.30s/img][A
+Extracting features@t:  30%|███       | 561/1854 [21:33<49:36,  2.30s/img][A
+Extracting features@t:  30%|███       | 562/1854 [21:36<49:32,  2.30s/img][A
+Extracting features@t:  30%|███       | 563/1854 [21:38<49:30,  2.30s/img][A
+Extracting features@t:  30%|███       | 564/1854 [21:40<49:28,  2.30s/img][A
+Extracting features@t:  30%|███       | 565/1854 [21:43<49:28,  2.30s/img][A
+Extracting features@t:  31%|███       | 566/1854 [21:45<49:24,  2.30s/img][A
+Extracting features@t:  31%|███       | 567/1854 [21:47<49:21,  2.30s/img][A
+Extracting features@t:  31%|███       | 568/1854 [21:50<49:19,  2.30s/img][A
+Extracting features@t:  31%|███       | 569/1854 [21:52<49:14,  2.30s/img][A
+Extracting features@t:  31%|███       | 570/1854 [21:54<49:15,  2.30s/img][A
+Extracting features@t:  31%|███       | 571/1854 [21:56<49:13,  2.30s/img][A
+Extracting features@t:  31%|███       | 572/1854 [21:59<49:11,  2.30s/img][A
+Extracting features@t:  31%|███       | 573/1854 [22:01<49:09,  2.30s/img][A
+Extracting features@t:  31%|███       | 574/1854 [22:03<49:08,  2.30s/img][A
+Extracting features@t:  31%|███       | 575/1854 [22:06<49:06,  2.30s/img][A
+Extracting features@t:  31%|███       | 576/1854 [22:08<49:05,  2.30s/img][A
+Extracting features@t:  31%|███       | 577/1854 [22:10<49:03,  2.31s/img][A
+Extracting features@t:  31%|███       | 578/1854 [22:13<49:02,  2.31s/img][A
+Extracting features@t:  31%|███       | 579/1854 [22:15<48:58,  2.30s/img][A
+Extracting features@t:  31%|███▏      | 580/1854 [22:17<48:57,  2.31s/img][A
+Extracting features@t:  31%|███▏      | 581/1854 [22:19<48:53,  2.30s/img][A
+Extracting features@t:  31%|███▏      | 582/1854 [22:22<48:50,  2.30s/img][A
+Extracting features@t:  31%|███▏      | 583/1854 [22:24<48:48,  2.30s/img][A
+Extracting features@t:  31%|███▏      | 584/1854 [22:26<48:44,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 585/1854 [22:29<48:41,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 586/1854 [22:31<48:42,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 587/1854 [22:33<48:37,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 588/1854 [22:36<48:34,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 589/1854 [22:38<48:30,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 590/1854 [22:40<48:28,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 591/1854 [22:42<48:25,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 592/1854 [22:45<48:24,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 593/1854 [22:47<48:23,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 594/1854 [22:49<48:21,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 595/1854 [22:52<48:19,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 596/1854 [22:54<48:18,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 597/1854 [22:56<48:16,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 598/1854 [22:59<48:14,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 599/1854 [23:01<48:12,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 600/1854 [23:03<48:09,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 601/1854 [23:06<48:07,  2.30s/img][A
+Extracting features@t:  32%|███▏      | 602/1854 [23:08<48:03,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 603/1854 [23:10<48:00,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 604/1854 [23:12<47:59,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 605/1854 [23:15<47:57,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 606/1854 [23:17<47:56,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 607/1854 [23:19<47:51,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 608/1854 [23:22<47:48,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 609/1854 [23:24<47:47,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 610/1854 [23:26<47:45,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 611/1854 [23:29<47:42,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 612/1854 [23:31<47:41,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 613/1854 [23:33<47:39,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 614/1854 [23:35<47:36,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 615/1854 [23:38<47:34,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 616/1854 [23:40<47:34,  2.31s/img][A
+Extracting features@t:  33%|███▎      | 617/1854 [23:42<47:31,  2.31s/img][A
+Extracting features@t:  33%|███▎      | 618/1854 [23:45<47:27,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 619/1854 [23:47<47:26,  2.31s/img][A
+Extracting features@t:  33%|███▎      | 620/1854 [23:49<47:23,  2.30s/img][A
+Extracting features@t:  33%|███▎      | 621/1854 [23:52<47:20,  2.30s/img][A
+Extracting features@t:  34%|███▎      | 622/1854 [23:54<47:18,  2.30s/img][A
+Extracting features@t:  34%|███▎      | 623/1854 [23:56<47:16,  2.30s/img][A
+Extracting features@t:  34%|███▎      | 624/1854 [23:59<47:13,  2.30s/img][A
+Extracting features@t:  34%|███▎      | 625/1854 [24:01<47:12,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 626/1854 [24:03<47:09,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 627/1854 [24:05<47:07,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 628/1854 [24:08<47:06,  2.31s/img][A
+Extracting features@t:  34%|███▍      | 629/1854 [24:10<47:03,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 630/1854 [24:12<46:58,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 631/1854 [24:15<46:57,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 632/1854 [24:17<46:53,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 633/1854 [24:19<46:52,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 634/1854 [24:22<46:47,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 635/1854 [24:24<46:46,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 636/1854 [24:26<46:46,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 637/1854 [24:28<46:44,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 638/1854 [24:31<46:41,  2.30s/img][A
+Extracting features@t:  34%|███▍      | 639/1854 [24:33<46:38,  2.30s/img][A
+Extracting features@t:  35%|███▍      | 640/1854 [24:35<46:35,  2.30s/img][A
+Extracting features@t:  35%|███▍      | 641/1854 [24:38<46:32,  2.30s/img][A
+Extracting features@t:  35%|███▍      | 642/1854 [24:40<46:30,  2.30s/img][A
+Extracting features@t:  35%|███▍      | 643/1854 [24:42<46:29,  2.30s/img][A
+Extracting features@t:  35%|███▍      | 644/1854 [24:45<46:27,  2.30s/img][A
+Extracting features@t:  35%|███▍      | 645/1854 [24:47<46:25,  2.30s/img][A
+Extracting features@t:  35%|███▍      | 646/1854 [24:49<46:23,  2.30s/img][A
+Extracting features@t:  35%|███▍      | 647/1854 [24:51<46:21,  2.30s/img][A
+Extracting features@t:  35%|███▍      | 648/1854 [24:54<46:19,  2.30s/img][A
+Extracting features@t:  35%|███▌      | 649/1854 [24:56<46:16,  2.30s/img][A
+Extracting features@t:  35%|███▌      | 650/1854 [24:58<46:13,  2.30s/img][A
+Extracting features@t:  35%|███▌      | 651/1854 [25:01<46:11,  2.30s/img][A
+Extracting features@t:  35%|███▌      | 652/1854 [25:03<46:09,  2.30s/img][A
+Extracting features@t:  35%|███▌      | 653/1854 [25:05<46:05,  2.30s/img][A
+Extracting features@t:  35%|███▌      | 654/1854 [25:08<46:02,  2.30s/img][A
+Extracting features@t:  35%|███▌      | 655/1854 [25:10<46:01,  2.30s/img][A
+Extracting features@t:  35%|███▌      | 656/1854 [25:12<46:01,  2.30s/img][A
+Extracting features@t:  35%|███▌      | 657/1854 [25:15<45:57,  2.30s/img][A
+Extracting features@t:  35%|███▌      | 658/1854 [25:17<45:57,  2.31s/img][A
+Extracting features@t:  36%|███▌      | 659/1854 [25:19<45:53,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 660/1854 [25:21<45:48,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 661/1854 [25:24<45:46,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 662/1854 [25:26<45:44,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 663/1854 [25:28<45:43,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 664/1854 [25:31<45:41,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 665/1854 [25:33<45:38,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 666/1854 [25:35<45:36,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 667/1854 [25:38<45:34,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 668/1854 [25:40<45:30,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 669/1854 [25:42<45:28,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 670/1854 [25:44<45:27,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 671/1854 [25:47<45:25,  2.30s/img][A
+Extracting features@t:  36%|███▌      | 672/1854 [25:49<45:23,  2.30s/img][A
+Extracting features@t:  36%|███▋      | 673/1854 [25:51<45:20,  2.30s/img][A
+Extracting features@t:  36%|███▋      | 674/1854 [25:54<45:19,  2.30s/img][A
+Extracting features@t:  36%|███▋      | 675/1854 [25:56<45:17,  2.30s/img][A
+Extracting features@t:  36%|███▋      | 676/1854 [25:58<45:16,  2.31s/img][A
+Extracting features@t:  37%|███▋      | 677/1854 [26:01<45:12,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 678/1854 [26:03<45:10,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 679/1854 [26:05<45:07,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 680/1854 [26:08<45:05,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 681/1854 [26:10<45:04,  2.31s/img][A
+Extracting features@t:  37%|███▋      | 682/1854 [26:12<45:01,  2.31s/img][A
+Extracting features@t:  37%|███▋      | 683/1854 [26:14<45:00,  2.31s/img][A
+Extracting features@t:  37%|███▋      | 684/1854 [26:17<44:57,  2.31s/img][A
+Extracting features@t:  37%|███▋      | 685/1854 [26:19<44:55,  2.31s/img][A
+Extracting features@t:  37%|███▋      | 686/1854 [26:21<44:51,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 687/1854 [26:24<44:48,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 688/1854 [26:26<44:46,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 689/1854 [26:28<44:44,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 690/1854 [26:31<44:40,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 691/1854 [26:33<44:37,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 692/1854 [26:35<44:37,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 693/1854 [26:37<44:32,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 694/1854 [26:40<44:30,  2.30s/img][A
+Extracting features@t:  37%|███▋      | 695/1854 [26:42<44:28,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 696/1854 [26:44<44:28,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 697/1854 [26:47<44:25,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 698/1854 [26:49<44:24,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 699/1854 [26:51<44:21,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 700/1854 [26:54<44:19,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 701/1854 [26:56<44:16,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 702/1854 [26:58<44:15,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 703/1854 [27:01<44:12,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 704/1854 [27:03<44:08,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 705/1854 [27:05<44:06,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 706/1854 [27:07<44:04,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 707/1854 [27:10<44:01,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 708/1854 [27:12<44:00,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 709/1854 [27:14<43:57,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 710/1854 [27:17<43:54,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 711/1854 [27:19<43:53,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 712/1854 [27:21<43:48,  2.30s/img][A
+Extracting features@t:  38%|███▊      | 713/1854 [27:24<43:46,  2.30s/img][A
+Extracting features@t:  39%|███▊      | 714/1854 [27:26<43:43,  2.30s/img][A
+Extracting features@t:  39%|███▊      | 715/1854 [27:28<43:42,  2.30s/img][A
+Extracting features@t:  39%|███▊      | 716/1854 [27:30<43:41,  2.30s/img][A
+Extracting features@t:  39%|███▊      | 717/1854 [27:33<43:40,  2.30s/img][A
+Extracting features@t:  39%|███▊      | 718/1854 [27:35<43:35,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 719/1854 [27:37<43:34,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 720/1854 [27:40<43:33,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 721/1854 [27:42<43:30,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 722/1854 [27:44<43:26,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 723/1854 [27:47<43:24,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 724/1854 [27:49<43:22,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 725/1854 [27:51<43:20,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 726/1854 [27:53<43:19,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 727/1854 [27:56<43:17,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 728/1854 [27:58<43:15,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 729/1854 [28:00<43:09,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 730/1854 [28:03<43:04,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 731/1854 [28:05<43:02,  2.30s/img][A
+Extracting features@t:  39%|███▉      | 732/1854 [28:07<43:00,  2.30s/img][A
+Extracting features@t:  40%|███▉      | 733/1854 [28:10<42:59,  2.30s/img][A
+Extracting features@t:  40%|███▉      | 734/1854 [28:12<42:58,  2.30s/img][A
+Extracting features@t:  40%|███▉      | 735/1854 [28:14<42:57,  2.30s/img][A
+Extracting features@t:  40%|███▉      | 736/1854 [28:16<42:54,  2.30s/img][A
+Extracting features@t:  40%|███▉      | 737/1854 [28:19<42:51,  2.30s/img][A
+Extracting features@t:  40%|███▉      | 738/1854 [28:21<42:49,  2.30s/img][A
+Extracting features@t:  40%|███▉      | 739/1854 [28:23<42:49,  2.30s/img][A
+Extracting features@t:  40%|███▉      | 740/1854 [28:26<42:46,  2.30s/img][A
+Extracting features@t:  40%|███▉      | 741/1854 [28:28<42:43,  2.30s/img][A
+Extracting features@t:  40%|████      | 742/1854 [28:30<42:41,  2.30s/img][A
+Extracting features@t:  40%|████      | 743/1854 [28:33<42:41,  2.31s/img][A
+Extracting features@t:  40%|████      | 744/1854 [28:35<42:37,  2.30s/img][A
+Extracting features@t:  40%|████      | 745/1854 [28:37<42:36,  2.31s/img][A
+Extracting features@t:  40%|████      | 746/1854 [28:40<42:32,  2.30s/img][A
+Extracting features@t:  40%|████      | 747/1854 [28:42<42:31,  2.30s/img][A
+Extracting features@t:  40%|████      | 748/1854 [28:44<42:28,  2.30s/img][A
+Extracting features@t:  40%|████      | 749/1854 [28:46<42:24,  2.30s/img][A
+Extracting features@t:  40%|████      | 750/1854 [28:49<42:20,  2.30s/img][A
+Extracting features@t:  41%|████      | 751/1854 [28:51<42:18,  2.30s/img][A
+Extracting features@t:  41%|████      | 752/1854 [28:53<42:18,  2.30s/img][A
+Extracting features@t:  41%|████      | 753/1854 [28:56<42:17,  2.30s/img][A
+Extracting features@t:  41%|████      | 754/1854 [28:58<42:12,  2.30s/img][A
+Extracting features@t:  41%|████      | 755/1854 [29:00<42:11,  2.30s/img][A
+Extracting features@t:  41%|████      | 756/1854 [29:03<42:08,  2.30s/img][A
+Extracting features@t:  41%|████      | 757/1854 [29:05<42:06,  2.30s/img][A
+Extracting features@t:  41%|████      | 758/1854 [29:07<42:03,  2.30s/img][A
+Extracting features@t:  41%|████      | 759/1854 [29:09<42:01,  2.30s/img][A
+Extracting features@t:  41%|████      | 760/1854 [29:12<42:00,  2.30s/img][A
+Extracting features@t:  41%|████      | 761/1854 [29:14<41:58,  2.30s/img][A
+Extracting features@t:  41%|████      | 762/1854 [29:16<41:55,  2.30s/img][A
+Extracting features@t:  41%|████      | 763/1854 [29:19<41:53,  2.30s/img][A
+Extracting features@t:  41%|████      | 764/1854 [29:21<41:52,  2.30s/img][A
+Extracting features@t:  41%|████▏     | 765/1854 [29:23<41:49,  2.30s/img][A
+Extracting features@t:  41%|████▏     | 766/1854 [29:26<41:46,  2.30s/img][A
+Extracting features@t:  41%|████▏     | 767/1854 [29:28<41:44,  2.30s/img][A
+Extracting features@t:  41%|████▏     | 768/1854 [29:30<41:42,  2.30s/img][A
+Extracting features@t:  41%|████▏     | 769/1854 [29:33<41:40,  2.30s/img][A
+Extracting features@t:  42%|████▏     | 770/1854 [29:35<41:36,  2.30s/img][A
+Extracting features@t:  42%|████▏     | 771/1854 [29:37<41:35,  2.30s/img][A
+Extracting features@t:  42%|████▏     | 772/1854 [29:39<41:33,  2.30s/img][A
+Extracting features@t:  42%|████▏     | 773/1854 [29:42<41:32,  2.31s/img][A
+Extracting features@t:  42%|████▏     | 774/1854 [29:44<41:30,  2.31s/img][A
+Extracting features@t:  42%|████▏     | 775/1854 [29:46<41:29,  2.31s/img][A
+Extracting features@t:  42%|████▏     | 776/1854 [29:49<41:27,  2.31s/img][A
+Extracting features@t:  42%|████▏     | 777/1854 [29:51<41:23,  2.31s/img][A
+Extracting features@t:  42%|████▏     | 778/1854 [29:53<41:20,  2.31s/img][A
+Extracting features@t:  42%|████▏     | 779/1854 [29:56<41:17,  2.30s/img][A
+Extracting features@t:  42%|████▏     | 780/1854 [29:58<41:16,  2.31s/img][A
+Extracting features@t:  42%|████▏     | 781/1854 [30:00<41:12,  2.30s/img][A
+Extracting features@t:  42%|████▏     | 782/1854 [30:02<41:09,  2.30s/img][A
+Extracting features@t:  42%|████▏     | 783/1854 [30:05<41:08,  2.31s/img][A
+Extracting features@t:  42%|████▏     | 784/1854 [30:07<41:07,  2.31s/img][A
+Extracting features@t:  42%|████▏     | 785/1854 [30:09<41:04,  2.31s/img][A
+Extracting features@t:  42%|████▏     | 786/1854 [30:12<41:00,  2.30s/img][A
+Extracting features@t:  42%|████▏     | 787/1854 [30:14<40:57,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 788/1854 [30:16<40:56,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 789/1854 [30:19<40:50,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 790/1854 [30:21<40:50,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 791/1854 [30:23<40:47,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 792/1854 [30:26<40:45,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 793/1854 [30:28<40:42,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 794/1854 [30:30<40:40,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 795/1854 [30:32<40:39,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 796/1854 [30:35<40:38,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 797/1854 [30:37<40:34,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 798/1854 [30:39<40:33,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 799/1854 [30:42<40:31,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 800/1854 [30:44<40:31,  2.31s/img][A
+Extracting features@t:  43%|████▎     | 801/1854 [30:46<40:28,  2.31s/img][A
+Extracting features@t:  43%|████▎     | 802/1854 [30:49<40:24,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 803/1854 [30:51<40:22,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 804/1854 [30:53<40:19,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 805/1854 [30:55<40:16,  2.30s/img][A
+Extracting features@t:  43%|████▎     | 806/1854 [30:58<40:15,  2.30s/img][A
+Extracting features@t:  44%|████▎     | 807/1854 [31:00<40:14,  2.31s/img][A
+Extracting features@t:  44%|████▎     | 808/1854 [31:02<40:12,  2.31s/img][A
+Extracting features@t:  44%|████▎     | 809/1854 [31:05<40:09,  2.31s/img][A
+Extracting features@t:  44%|████▎     | 810/1854 [31:07<40:06,  2.31s/img][A
+Extracting features@t:  44%|████▎     | 811/1854 [31:09<40:03,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 812/1854 [31:12<40:01,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 813/1854 [31:14<39:58,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 814/1854 [31:16<39:57,  2.31s/img][A
+Extracting features@t:  44%|████▍     | 815/1854 [31:19<39:53,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 816/1854 [31:21<39:51,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 817/1854 [31:23<39:50,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 818/1854 [31:25<39:48,  2.31s/img][A
+Extracting features@t:  44%|████▍     | 819/1854 [31:28<39:43,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 820/1854 [31:30<39:43,  2.31s/img][A
+Extracting features@t:  44%|████▍     | 821/1854 [31:32<39:40,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 822/1854 [31:35<39:38,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 823/1854 [31:37<39:35,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 824/1854 [31:39<39:34,  2.30s/img][A
+Extracting features@t:  44%|████▍     | 825/1854 [31:42<39:31,  2.31s/img][A
+Extracting features@t:  45%|████▍     | 826/1854 [31:44<39:30,  2.31s/img][A
+Extracting features@t:  45%|████▍     | 827/1854 [31:46<39:27,  2.31s/img][A
+Extracting features@t:  45%|████▍     | 828/1854 [31:48<39:25,  2.31s/img][A
+Extracting features@t:  45%|████▍     | 829/1854 [31:51<39:20,  2.30s/img][A
+Extracting features@t:  45%|████▍     | 830/1854 [31:53<39:17,  2.30s/img][A
+Extracting features@t:  45%|████▍     | 831/1854 [31:55<39:17,  2.30s/img][A
+Extracting features@t:  45%|████▍     | 832/1854 [31:58<39:15,  2.30s/img][A
+Extracting features@t:  45%|████▍     | 833/1854 [32:00<39:12,  2.30s/img][A
+Extracting features@t:  45%|████▍     | 834/1854 [32:02<39:11,  2.30s/img][A
+Extracting features@t:  45%|████▌     | 835/1854 [32:05<39:10,  2.31s/img][A
+Extracting features@t:  45%|████▌     | 836/1854 [32:07<39:07,  2.31s/img][A
+Extracting features@t:  45%|████▌     | 837/1854 [32:09<39:04,  2.31s/img][A
+Extracting features@t:  45%|████▌     | 838/1854 [32:12<39:02,  2.31s/img][A
+Extracting features@t:  45%|████▌     | 839/1854 [32:14<38:58,  2.30s/img][A
+Extracting features@t:  45%|████▌     | 840/1854 [32:16<38:57,  2.30s/img][A
+Extracting features@t:  45%|████▌     | 841/1854 [32:18<38:53,  2.30s/img][A
+Extracting features@t:  45%|████▌     | 842/1854 [32:21<38:48,  2.30s/img][A
+Extracting features@t:  45%|████▌     | 843/1854 [32:23<38:45,  2.30s/img][A
+Extracting features@t:  46%|████▌     | 844/1854 [32:25<38:53,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 845/1854 [32:28<38:50,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 846/1854 [32:30<38:46,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 847/1854 [32:32<38:42,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 848/1854 [32:35<38:38,  2.30s/img][A
+Extracting features@t:  46%|████▌     | 849/1854 [32:37<38:36,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 850/1854 [32:39<38:34,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 851/1854 [32:42<38:32,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 852/1854 [32:44<38:29,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 853/1854 [32:46<38:27,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 854/1854 [32:48<38:26,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 855/1854 [32:51<38:22,  2.31s/img][A
+Extracting features@t:  46%|████▌     | 856/1854 [32:53<38:18,  2.30s/img][A
+Extracting features@t:  46%|████▌     | 857/1854 [32:55<38:16,  2.30s/img][A
+Extracting features@t:  46%|████▋     | 858/1854 [32:58<38:12,  2.30s/img][A
+Extracting features@t:  46%|████▋     | 859/1854 [33:00<38:12,  2.30s/img][A
+Extracting features@t:  46%|████▋     | 860/1854 [33:02<38:10,  2.30s/img][A
+Extracting features@t:  46%|████▋     | 861/1854 [33:05<38:07,  2.30s/img][A
+Extracting features@t:  46%|████▋     | 862/1854 [33:07<38:05,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 863/1854 [33:09<38:03,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 864/1854 [33:11<38:02,  2.31s/img][A
+Extracting features@t:  47%|████▋     | 865/1854 [33:14<37:59,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 866/1854 [33:16<37:55,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 867/1854 [33:18<37:52,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 868/1854 [33:21<37:49,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 869/1854 [33:23<37:47,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 870/1854 [33:25<37:46,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 871/1854 [33:28<37:45,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 872/1854 [33:30<37:43,  2.31s/img][A
+Extracting features@t:  47%|████▋     | 873/1854 [33:32<37:42,  2.31s/img][A
+Extracting features@t:  47%|████▋     | 874/1854 [33:35<37:39,  2.31s/img][A
+Extracting features@t:  47%|████▋     | 875/1854 [33:37<37:36,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 876/1854 [33:39<37:34,  2.31s/img][A
+Extracting features@t:  47%|████▋     | 877/1854 [33:41<37:32,  2.31s/img][A
+Extracting features@t:  47%|████▋     | 878/1854 [33:44<37:29,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 879/1854 [33:46<37:26,  2.30s/img][A
+Extracting features@t:  47%|████▋     | 880/1854 [33:48<37:23,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 881/1854 [33:51<37:21,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 882/1854 [33:53<37:19,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 883/1854 [33:55<37:15,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 884/1854 [33:58<37:12,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 885/1854 [34:00<37:11,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 886/1854 [34:02<37:10,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 887/1854 [34:04<37:07,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 888/1854 [34:07<37:05,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 889/1854 [34:09<37:03,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 890/1854 [34:11<37:01,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 891/1854 [34:14<36:58,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 892/1854 [34:16<36:56,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 893/1854 [34:18<36:56,  2.31s/img][A
+Extracting features@t:  48%|████▊     | 894/1854 [34:21<36:52,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 895/1854 [34:23<36:49,  2.30s/img][A
+Extracting features@t:  48%|████▊     | 896/1854 [34:25<36:49,  2.31s/img][A
+Extracting features@t:  48%|████▊     | 897/1854 [34:28<36:47,  2.31s/img][A
+Extracting features@t:  48%|████▊     | 898/1854 [34:30<36:44,  2.31s/img][A
+Extracting features@t:  48%|████▊     | 899/1854 [34:32<36:43,  2.31s/img][A
+Extracting features@t:  49%|████▊     | 900/1854 [34:34<36:39,  2.31s/img][A
+Extracting features@t:  49%|████▊     | 901/1854 [34:37<36:35,  2.30s/img][A
+Extracting features@t:  49%|████▊     | 902/1854 [34:39<36:32,  2.30s/img][A
+Extracting features@t:  49%|████▊     | 903/1854 [34:41<36:30,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 904/1854 [34:44<36:27,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 905/1854 [34:46<36:26,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 906/1854 [34:48<36:25,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 907/1854 [34:51<36:22,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 908/1854 [34:53<36:21,  2.31s/img][A
+Extracting features@t:  49%|████▉     | 909/1854 [34:55<36:18,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 910/1854 [34:57<36:15,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 911/1854 [35:00<36:14,  2.31s/img][A
+Extracting features@t:  49%|████▉     | 912/1854 [35:02<36:11,  2.31s/img][A
+Extracting features@t:  49%|████▉     | 913/1854 [35:04<36:08,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 914/1854 [35:07<36:06,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 915/1854 [35:09<36:03,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 916/1854 [35:11<36:00,  2.30s/img][A
+Extracting features@t:  49%|████▉     | 917/1854 [35:14<35:57,  2.30s/img][A
+Extracting features@t:  50%|████▉     | 918/1854 [35:16<35:56,  2.30s/img][A
+Extracting features@t:  50%|████▉     | 919/1854 [35:18<35:53,  2.30s/img][A
+Extracting features@t:  50%|████▉     | 920/1854 [35:20<35:52,  2.30s/img][A
+Extracting features@t:  50%|████▉     | 921/1854 [35:23<35:49,  2.30s/img][A
+Extracting features@t:  50%|████▉     | 922/1854 [35:25<35:47,  2.30s/img][A
+Extracting features@t:  50%|████▉     | 923/1854 [35:27<35:45,  2.30s/img][A
+Extracting features@t:  50%|████▉     | 924/1854 [35:30<35:43,  2.30s/img][A
+Extracting features@t:  50%|████▉     | 925/1854 [35:32<35:41,  2.31s/img][A
+Extracting features@t:  50%|████▉     | 926/1854 [35:34<35:40,  2.31s/img][A
+Extracting features@t:  50%|█████     | 927/1854 [35:37<35:38,  2.31s/img][A
+Extracting features@t:  50%|█████     | 928/1854 [35:39<35:35,  2.31s/img][A
+Extracting features@t:  50%|█████     | 929/1854 [35:41<35:32,  2.31s/img][A
+Extracting features@t:  50%|█████     | 930/1854 [35:44<35:27,  2.30s/img][A
+Extracting features@t:  50%|█████     | 931/1854 [35:46<35:26,  2.30s/img][A
+Extracting features@t:  50%|█████     | 932/1854 [35:48<35:24,  2.30s/img][A
+Extracting features@t:  50%|█████     | 933/1854 [35:50<35:22,  2.30s/img][A
+Extracting features@t:  50%|█████     | 934/1854 [35:53<35:20,  2.31s/img][A
+Extracting features@t:  50%|█████     | 935/1854 [35:55<35:19,  2.31s/img][A
+Extracting features@t:  50%|█████     | 936/1854 [35:57<35:16,  2.31s/img][A
+Extracting features@t:  51%|█████     | 937/1854 [36:00<35:13,  2.30s/img][A
+Extracting features@t:  51%|█████     | 938/1854 [36:02<35:11,  2.30s/img][A
+Extracting features@t:  51%|█████     | 939/1854 [36:04<35:08,  2.30s/img][A
+Extracting features@t:  51%|█████     | 940/1854 [36:07<35:06,  2.31s/img][A
+Extracting features@t:  51%|█████     | 941/1854 [36:09<35:03,  2.30s/img][A
+Extracting features@t:  51%|█████     | 942/1854 [36:11<35:01,  2.30s/img][A
+Extracting features@t:  51%|█████     | 943/1854 [36:14<34:59,  2.30s/img][A
+Extracting features@t:  51%|█████     | 944/1854 [36:16<34:56,  2.30s/img][A
+Extracting features@t:  51%|█████     | 945/1854 [36:18<34:52,  2.30s/img][A
+Extracting features@t:  51%|█████     | 946/1854 [36:20<34:50,  2.30s/img][A
+Extracting features@t:  51%|█████     | 947/1854 [36:23<34:48,  2.30s/img][A
+Extracting features@t:  51%|█████     | 948/1854 [36:25<34:46,  2.30s/img][A
+Extracting features@t:  51%|█████     | 949/1854 [36:27<34:44,  2.30s/img][A
+Extracting features@t:  51%|█████     | 950/1854 [36:30<34:42,  2.30s/img][A
+Extracting features@t:  51%|█████▏    | 951/1854 [36:32<34:40,  2.30s/img][A
+Extracting features@t:  51%|█████▏    | 952/1854 [36:34<34:38,  2.30s/img][A
+Extracting features@t:  51%|█████▏    | 953/1854 [36:37<34:36,  2.30s/img][A
+Extracting features@t:  51%|█████▏    | 954/1854 [36:39<34:34,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 955/1854 [36:41<34:31,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 956/1854 [36:43<34:28,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 957/1854 [36:46<34:25,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 958/1854 [36:48<34:23,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 959/1854 [36:50<34:22,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 960/1854 [36:53<34:18,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 961/1854 [36:55<34:18,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 962/1854 [36:57<34:15,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 963/1854 [37:00<34:13,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 964/1854 [37:02<34:10,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 965/1854 [37:04<34:07,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 966/1854 [37:06<34:03,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 967/1854 [37:09<34:02,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 968/1854 [37:11<34:01,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 969/1854 [37:13<33:59,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 970/1854 [37:16<33:54,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 971/1854 [37:18<33:54,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 972/1854 [37:20<33:52,  2.30s/img][A
+Extracting features@t:  52%|█████▏    | 973/1854 [37:23<33:50,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 974/1854 [37:25<33:46,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 975/1854 [37:27<33:45,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 976/1854 [37:30<33:42,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 977/1854 [37:32<33:41,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 978/1854 [37:34<33:38,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 979/1854 [37:36<33:36,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 980/1854 [37:39<33:35,  2.31s/img][A
+Extracting features@t:  53%|█████▎    | 981/1854 [37:41<33:32,  2.31s/img][A
+Extracting features@t:  53%|█████▎    | 982/1854 [37:43<33:30,  2.31s/img][A
+Extracting features@t:  53%|█████▎    | 983/1854 [37:46<33:28,  2.31s/img][A
+Extracting features@t:  53%|█████▎    | 984/1854 [37:48<33:25,  2.31s/img][A
+Extracting features@t:  53%|█████▎    | 985/1854 [37:50<33:23,  2.31s/img][A
+Extracting features@t:  53%|█████▎    | 986/1854 [37:53<33:19,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 987/1854 [37:55<33:16,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 988/1854 [37:57<33:13,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 989/1854 [37:59<33:12,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 990/1854 [38:02<33:11,  2.30s/img][A
+Extracting features@t:  53%|█████▎    | 991/1854 [38:04<33:07,  2.30s/img][A
+Extracting features@t:  54%|█████▎    | 992/1854 [38:06<33:05,  2.30s/img][A
+Extracting features@t:  54%|█████▎    | 993/1854 [38:09<33:04,  2.31s/img][A
+Extracting features@t:  54%|█████▎    | 994/1854 [38:11<33:00,  2.30s/img][A
+Extracting features@t:  54%|█████▎    | 995/1854 [38:13<32:58,  2.30s/img][A
+Extracting features@t:  54%|█████▎    | 996/1854 [38:16<32:54,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 997/1854 [38:18<32:53,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 998/1854 [38:20<32:51,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 999/1854 [38:23<32:48,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 1000/1854 [38:25<32:47,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 1001/1854 [38:27<32:45,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 1002/1854 [38:29<32:41,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 1003/1854 [38:32<32:40,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 1004/1854 [38:34<32:38,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 1005/1854 [38:36<32:36,  2.31s/img][A
+Extracting features@t:  54%|█████▍    | 1006/1854 [38:39<32:34,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 1007/1854 [38:41<32:32,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 1008/1854 [38:43<32:30,  2.31s/img][A
+Extracting features@t:  54%|█████▍    | 1009/1854 [38:46<32:26,  2.30s/img][A
+Extracting features@t:  54%|█████▍    | 1010/1854 [38:48<32:24,  2.30s/img][A
+Extracting features@t:  55%|█████▍    | 1011/1854 [38:50<32:23,  2.31s/img][A
+Extracting features@t:  55%|█████▍    | 1012/1854 [38:52<32:19,  2.30s/img][A
+Extracting features@t:  55%|█████▍    | 1013/1854 [38:55<32:17,  2.30s/img][A
+Extracting features@t:  55%|█████▍    | 1014/1854 [38:57<32:16,  2.31s/img][A
+Extracting features@t:  55%|█████▍    | 1015/1854 [38:59<32:13,  2.31s/img][A
+Extracting features@t:  55%|█████▍    | 1016/1854 [39:02<32:11,  2.31s/img][A
+Extracting features@t:  55%|█████▍    | 1017/1854 [39:04<32:09,  2.30s/img][A
+Extracting features@t:  55%|█████▍    | 1018/1854 [39:06<32:08,  2.31s/img][A
+Extracting features@t:  55%|█████▍    | 1019/1854 [39:09<32:05,  2.31s/img][A
+Extracting features@t:  55%|█████▌    | 1020/1854 [39:11<32:03,  2.31s/img][A
+Extracting features@t:  55%|█████▌    | 1021/1854 [39:13<31:59,  2.30s/img][A
+Extracting features@t:  55%|█████▌    | 1022/1854 [39:16<31:57,  2.30s/img][A
+Extracting features@t:  55%|█████▌    | 1023/1854 [39:18<31:55,  2.30s/img][A
+Extracting features@t:  55%|█████▌    | 1024/1854 [39:20<31:54,  2.31s/img][A
+Extracting features@t:  55%|█████▌    | 1025/1854 [39:22<31:52,  2.31s/img][A
+Extracting features@t:  55%|█████▌    | 1026/1854 [39:25<31:49,  2.31s/img][A
+Extracting features@t:  55%|█████▌    | 1027/1854 [39:27<31:46,  2.31s/img][A
+Extracting features@t:  55%|█████▌    | 1028/1854 [39:29<31:42,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1029/1854 [39:32<31:40,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1030/1854 [39:34<31:38,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1031/1854 [39:36<31:35,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1032/1854 [39:39<31:32,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1033/1854 [39:41<31:29,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1034/1854 [39:43<31:28,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1035/1854 [39:45<31:25,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1036/1854 [39:48<31:23,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1037/1854 [39:50<31:20,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1038/1854 [39:52<31:19,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1039/1854 [39:55<31:17,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1040/1854 [39:57<31:15,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1041/1854 [39:59<31:12,  2.30s/img][A
+Extracting features@t:  56%|█████▌    | 1042/1854 [40:02<31:09,  2.30s/img][A
+Extracting features@t:  56%|█████▋    | 1043/1854 [40:04<31:07,  2.30s/img][A
+Extracting features@t:  56%|█████▋    | 1044/1854 [40:06<31:05,  2.30s/img][A
+Extracting features@t:  56%|█████▋    | 1045/1854 [40:09<31:02,  2.30s/img][A
+Extracting features@t:  56%|█████▋    | 1046/1854 [40:11<31:01,  2.30s/img][A
+Extracting features@t:  56%|█████▋    | 1047/1854 [40:13<30:58,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1048/1854 [40:15<30:56,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1049/1854 [40:18<30:53,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1050/1854 [40:20<30:51,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1051/1854 [40:22<30:48,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1052/1854 [40:25<30:46,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1053/1854 [40:27<30:44,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1054/1854 [40:29<30:42,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1055/1854 [40:32<30:40,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1056/1854 [40:34<30:37,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1057/1854 [40:36<30:36,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1058/1854 [40:38<30:34,  2.31s/img][A
+Extracting features@t:  57%|█████▋    | 1059/1854 [40:41<30:32,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1060/1854 [40:43<30:28,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1061/1854 [40:45<30:27,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1062/1854 [40:48<30:24,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1063/1854 [40:50<30:22,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1064/1854 [40:52<30:20,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1065/1854 [40:55<30:17,  2.30s/img][A
+Extracting features@t:  57%|█████▋    | 1066/1854 [40:57<30:15,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1067/1854 [40:59<30:13,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1068/1854 [41:01<30:09,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1069/1854 [41:04<30:07,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1070/1854 [41:06<30:04,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1071/1854 [41:08<30:02,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1072/1854 [41:11<30:01,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1073/1854 [41:13<29:58,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1074/1854 [41:15<29:56,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1075/1854 [41:18<29:54,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1076/1854 [41:20<29:52,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1077/1854 [41:22<29:49,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1078/1854 [41:25<29:46,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1079/1854 [41:27<29:44,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1080/1854 [41:29<29:42,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1081/1854 [41:31<29:40,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1082/1854 [41:34<29:37,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1083/1854 [41:36<29:35,  2.30s/img][A
+Extracting features@t:  58%|█████▊    | 1084/1854 [41:38<29:33,  2.30s/img][A
+Extracting features@t:  59%|█████▊    | 1085/1854 [41:41<29:31,  2.30s/img][A
+Extracting features@t:  59%|█████▊    | 1086/1854 [41:43<29:29,  2.30s/img][A
+Extracting features@t:  59%|█████▊    | 1087/1854 [41:45<29:26,  2.30s/img][A
+Extracting features@t:  59%|█████▊    | 1088/1854 [41:48<29:23,  2.30s/img][A
+Extracting features@t:  59%|█████▊    | 1089/1854 [41:50<29:21,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1090/1854 [41:52<29:19,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1091/1854 [41:54<29:15,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1092/1854 [41:57<29:15,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1093/1854 [41:59<29:13,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1094/1854 [42:01<29:10,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1095/1854 [42:04<29:07,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1096/1854 [42:06<29:05,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1097/1854 [42:08<29:03,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1098/1854 [42:11<29:01,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1099/1854 [42:13<28:59,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1100/1854 [42:15<28:57,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1101/1854 [42:17<28:55,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1102/1854 [42:20<28:51,  2.30s/img][A
+Extracting features@t:  59%|█████▉    | 1103/1854 [42:22<28:49,  2.30s/img][A
+Extracting features@t:  60%|█████▉    | 1104/1854 [42:24<28:47,  2.30s/img][A
+Extracting features@t:  60%|█████▉    | 1105/1854 [42:27<28:45,  2.30s/img][A
+Extracting features@t:  60%|█████▉    | 1106/1854 [42:29<28:43,  2.30s/img][A
+Extracting features@t:  60%|█████▉    | 1107/1854 [42:31<28:40,  2.30s/img][A
+Extracting features@t:  60%|█████▉    | 1108/1854 [42:34<28:37,  2.30s/img][A
+Extracting features@t:  60%|█████▉    | 1109/1854 [42:36<28:35,  2.30s/img][A
+Extracting features@t:  60%|█████▉    | 1110/1854 [42:38<28:33,  2.30s/img][A
+Extracting features@t:  60%|█████▉    | 1111/1854 [42:41<28:30,  2.30s/img][A
+Extracting features@t:  60%|█████▉    | 1112/1854 [42:43<28:29,  2.30s/img][A
+Extracting features@t:  60%|██████    | 1113/1854 [42:45<28:27,  2.30s/img][A
+Extracting features@t:  60%|██████    | 1114/1854 [42:47<28:25,  2.30s/img][A
+Extracting features@t:  60%|██████    | 1115/1854 [42:50<28:22,  2.30s/img][A
+Extracting features@t:  60%|██████    | 1116/1854 [42:52<28:20,  2.30s/img][A
+Extracting features@t:  60%|██████    | 1117/1854 [42:54<28:17,  2.30s/img][A
+Extracting features@t:  60%|██████    | 1118/1854 [42:57<28:15,  2.30s/img][A
+Extracting features@t:  60%|██████    | 1119/1854 [42:59<28:13,  2.30s/img][A
+Extracting features@t:  60%|██████    | 1120/1854 [43:01<28:11,  2.30s/img][A
+Extracting features@t:  60%|██████    | 1121/1854 [43:04<28:08,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1122/1854 [43:06<28:07,  2.31s/img][A
+Extracting features@t:  61%|██████    | 1123/1854 [43:08<28:04,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1124/1854 [43:10<28:02,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1125/1854 [43:13<28:00,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1126/1854 [43:15<27:57,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1127/1854 [43:17<27:54,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1128/1854 [43:20<27:53,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1129/1854 [43:22<27:49,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1130/1854 [43:24<27:47,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1131/1854 [43:27<27:47,  2.31s/img][A
+Extracting features@t:  61%|██████    | 1132/1854 [43:29<27:44,  2.31s/img][A
+Extracting features@t:  61%|██████    | 1133/1854 [43:31<27:40,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1134/1854 [43:34<27:37,  2.30s/img][A
+Extracting features@t:  61%|██████    | 1135/1854 [43:36<27:35,  2.30s/img][A
+Extracting features@t:  61%|██████▏   | 1136/1854 [43:38<27:32,  2.30s/img][A
+Extracting features@t:  61%|██████▏   | 1137/1854 [43:40<27:30,  2.30s/img][A
+Extracting features@t:  61%|██████▏   | 1138/1854 [43:43<27:28,  2.30s/img][A
+Extracting features@t:  61%|██████▏   | 1139/1854 [43:45<27:25,  2.30s/img][A
+Extracting features@t:  61%|██████▏   | 1140/1854 [43:47<27:24,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1141/1854 [43:50<27:21,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1142/1854 [43:52<27:19,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1143/1854 [43:54<27:15,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1144/1854 [43:57<27:13,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1145/1854 [43:59<27:11,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1146/1854 [44:01<27:10,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1147/1854 [44:03<27:07,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1148/1854 [44:06<27:05,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1149/1854 [44:08<27:03,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1150/1854 [44:10<27:00,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1151/1854 [44:13<26:57,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1152/1854 [44:15<26:56,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1153/1854 [44:17<26:54,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1154/1854 [44:20<26:52,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1155/1854 [44:22<26:49,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1156/1854 [44:24<26:47,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1157/1854 [44:26<26:46,  2.30s/img][A
+Extracting features@t:  62%|██████▏   | 1158/1854 [44:29<26:44,  2.31s/img][A
+Extracting features@t:  63%|██████▎   | 1159/1854 [44:31<26:41,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1160/1854 [44:33<26:37,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1161/1854 [44:36<26:34,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1162/1854 [44:38<26:32,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1163/1854 [44:40<26:32,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1164/1854 [44:43<26:29,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1165/1854 [44:45<26:26,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1166/1854 [44:47<26:24,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1167/1854 [44:50<26:23,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1168/1854 [44:52<26:21,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1169/1854 [44:54<26:17,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1170/1854 [44:56<26:14,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1171/1854 [44:59<26:12,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1172/1854 [45:01<26:09,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1173/1854 [45:03<26:07,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1174/1854 [45:06<26:05,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1175/1854 [45:08<26:03,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1176/1854 [45:10<26:02,  2.30s/img][A
+Extracting features@t:  63%|██████▎   | 1177/1854 [45:13<26:00,  2.30s/img][A
+Extracting features@t:  64%|██████▎   | 1178/1854 [45:15<25:57,  2.30s/img][A
+Extracting features@t:  64%|██████▎   | 1179/1854 [45:17<25:56,  2.31s/img][A
+Extracting features@t:  64%|██████▎   | 1180/1854 [45:19<25:53,  2.31s/img][A
+Extracting features@t:  64%|██████▎   | 1181/1854 [45:22<25:51,  2.31s/img][A
+Extracting features@t:  64%|██████▍   | 1182/1854 [45:24<25:48,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1183/1854 [45:26<25:45,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1184/1854 [45:29<25:44,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1185/1854 [45:31<25:41,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1186/1854 [45:33<25:38,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1187/1854 [45:36<25:36,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1188/1854 [45:38<25:34,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1189/1854 [45:40<25:31,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1190/1854 [45:42<25:28,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1191/1854 [45:45<25:26,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1192/1854 [45:47<25:24,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1193/1854 [45:49<25:22,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1194/1854 [45:52<25:20,  2.30s/img][A
+Extracting features@t:  64%|██████▍   | 1195/1854 [45:54<25:18,  2.30s/img][A
+Extracting features@t:  65%|██████▍   | 1196/1854 [45:56<25:15,  2.30s/img][A
+Extracting features@t:  65%|██████▍   | 1197/1854 [45:59<25:13,  2.30s/img][A
+Extracting features@t:  65%|██████▍   | 1198/1854 [46:01<25:10,  2.30s/img][A
+Extracting features@t:  65%|██████▍   | 1199/1854 [46:03<25:08,  2.30s/img][A
+Extracting features@t:  65%|██████▍   | 1200/1854 [46:06<25:06,  2.30s/img][A
+Extracting features@t:  65%|██████▍   | 1201/1854 [46:08<25:03,  2.30s/img][A
+Extracting features@t:  65%|██████▍   | 1202/1854 [46:10<25:00,  2.30s/img][A
+Extracting features@t:  65%|██████▍   | 1203/1854 [46:12<24:57,  2.30s/img][A
+Extracting features@t:  65%|██████▍   | 1204/1854 [46:15<24:55,  2.30s/img][A
+Extracting features@t:  65%|██████▍   | 1205/1854 [46:17<24:53,  2.30s/img][A
+Extracting features@t:  65%|██████▌   | 1206/1854 [46:19<24:52,  2.30s/img][A
+Extracting features@t:  65%|██████▌   | 1207/1854 [46:22<24:49,  2.30s/img][A
+Extracting features@t:  65%|██████▌   | 1208/1854 [46:24<24:48,  2.30s/img][A
+Extracting features@t:  65%|██████▌   | 1209/1854 [46:26<24:45,  2.30s/img][A
+Extracting features@t:  65%|██████▌   | 1210/1854 [46:29<24:43,  2.30s/img][A
+Extracting features@t:  65%|██████▌   | 1211/1854 [46:31<24:40,  2.30s/img][A
+Extracting features@t:  65%|██████▌   | 1212/1854 [46:33<24:37,  2.30s/img][A
+Extracting features@t:  65%|██████▌   | 1213/1854 [46:35<24:34,  2.30s/img][A
+Extracting features@t:  65%|██████▌   | 1214/1854 [46:38<24:32,  2.30s/img][A
+Extracting features@t:  66%|██████▌   | 1215/1854 [46:40<24:31,  2.30s/img][A
+Extracting features@t:  66%|██████▌   | 1216/1854 [46:42<24:28,  2.30s/img][A
+Extracting features@t:  66%|██████▌   | 1217/1854 [46:45<24:26,  2.30s/img][A
+Extracting features@t:  66%|██████▌   | 1218/1854 [46:47<24:23,  2.30s/img][A
+Extracting features@t:  66%|██████▌   | 1219/1854 [46:49<24:20,  2.30s/img][A
+Extracting features@t:  66%|██████▌   | 1220/1854 [46:52<24:19,  2.30s/img][A
+Extracting features@t:  66%|██████▌   | 1221/1854 [46:54<24:17,  2.30s/img][A
+Extracting features@t:  66%|██████▌   | 1222/1854 [46:56<24:19,  2.31s/img][A
+Extracting features@t:  66%|██████▌   | 1223/1854 [46:58<24:15,  2.31s/img][A
+Extracting features@t:  66%|██████▌   | 1224/1854 [47:01<24:12,  2.31s/img][A
+Extracting features@t:  66%|██████▌   | 1225/1854 [47:03<24:09,  2.31s/img][A
+Extracting features@t:  66%|██████▌   | 1226/1854 [47:05<24:07,  2.30s/img][A
+Extracting features@t:  66%|██████▌   | 1227/1854 [47:08<24:05,  2.30s/img][A
+Extracting features@t:  66%|██████▌   | 1228/1854 [47:10<24:03,  2.31s/img][A
+Extracting features@t:  66%|██████▋   | 1229/1854 [47:12<23:59,  2.30s/img][A
+Extracting features@t:  66%|██████▋   | 1230/1854 [47:15<23:57,  2.30s/img][A
+Extracting features@t:  66%|██████▋   | 1231/1854 [47:17<23:55,  2.30s/img][A
+Extracting features@t:  66%|██████▋   | 1232/1854 [47:19<23:52,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1233/1854 [47:22<23:49,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1234/1854 [47:24<23:48,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1235/1854 [47:26<23:45,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1236/1854 [47:28<23:43,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1237/1854 [47:31<23:41,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1238/1854 [47:33<23:39,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1239/1854 [47:35<23:37,  2.31s/img][A
+Extracting features@t:  67%|██████▋   | 1240/1854 [47:38<23:35,  2.31s/img][A
+Extracting features@t:  67%|██████▋   | 1241/1854 [47:40<23:31,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1242/1854 [47:42<23:29,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1243/1854 [47:45<23:26,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1244/1854 [47:47<23:24,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1245/1854 [47:49<23:22,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1246/1854 [47:51<23:20,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1247/1854 [47:54<23:18,  2.30s/img][A
+Extracting features@t:  67%|██████▋   | 1248/1854 [47:56<23:17,  2.31s/img][A
+Extracting features@t:  67%|██████▋   | 1249/1854 [47:58<23:14,  2.31s/img][A
+Extracting features@t:  67%|██████▋   | 1250/1854 [48:01<23:12,  2.31s/img][A
+Extracting features@t:  67%|██████▋   | 1251/1854 [48:03<23:09,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1252/1854 [48:05<23:08,  2.31s/img][A
+Extracting features@t:  68%|██████▊   | 1253/1854 [48:08<23:06,  2.31s/img][A
+Extracting features@t:  68%|██████▊   | 1254/1854 [48:10<23:03,  2.31s/img][A
+Extracting features@t:  68%|██████▊   | 1255/1854 [48:12<23:00,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1256/1854 [48:15<22:56,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1257/1854 [48:17<22:55,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1258/1854 [48:19<22:53,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1259/1854 [48:21<22:50,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1260/1854 [48:24<22:47,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1261/1854 [48:26<22:45,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1262/1854 [48:28<22:43,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1263/1854 [48:31<22:41,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1264/1854 [48:33<22:39,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1265/1854 [48:35<22:37,  2.31s/img][A
+Extracting features@t:  68%|██████▊   | 1266/1854 [48:38<22:35,  2.31s/img][A
+Extracting features@t:  68%|██████▊   | 1267/1854 [48:40<22:33,  2.31s/img][A
+Extracting features@t:  68%|██████▊   | 1268/1854 [48:42<22:30,  2.30s/img][A
+Extracting features@t:  68%|██████▊   | 1269/1854 [48:44<22:27,  2.30s/img][A
+Extracting features@t:  69%|██████▊   | 1270/1854 [48:47<22:24,  2.30s/img][A
+Extracting features@t:  69%|██████▊   | 1271/1854 [48:49<22:22,  2.30s/img][A
+Extracting features@t:  69%|██████▊   | 1272/1854 [48:51<22:19,  2.30s/img][A
+Extracting features@t:  69%|██████▊   | 1273/1854 [48:54<22:18,  2.30s/img][A
+Extracting features@t:  69%|██████▊   | 1274/1854 [48:56<22:16,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1275/1854 [48:58<22:14,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1276/1854 [49:01<22:12,  2.31s/img][A
+Extracting features@t:  69%|██████▉   | 1277/1854 [49:03<22:09,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1278/1854 [49:05<22:07,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1279/1854 [49:08<22:04,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1280/1854 [49:10<22:02,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1281/1854 [49:12<22:00,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1282/1854 [49:14<21:58,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1283/1854 [49:17<21:55,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1284/1854 [49:19<21:52,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1285/1854 [49:21<21:50,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1286/1854 [49:24<21:48,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1287/1854 [49:26<21:45,  2.30s/img][A
+Extracting features@t:  69%|██████▉   | 1288/1854 [49:28<21:43,  2.30s/img][A
+Extracting features@t:  70%|██████▉   | 1289/1854 [49:31<21:41,  2.30s/img][A
+Extracting features@t:  70%|██████▉   | 1290/1854 [49:33<21:39,  2.30s/img][A
+Extracting features@t:  70%|██████▉   | 1291/1854 [49:35<21:36,  2.30s/img][A
+Extracting features@t:  70%|██████▉   | 1292/1854 [49:37<21:34,  2.30s/img][A
+Extracting features@t:  70%|██████▉   | 1293/1854 [49:40<21:32,  2.30s/img][A
+Extracting features@t:  70%|██████▉   | 1294/1854 [49:42<21:29,  2.30s/img][A
+Extracting features@t:  70%|██████▉   | 1295/1854 [49:44<21:26,  2.30s/img][A
+Extracting features@t:  70%|██████▉   | 1296/1854 [49:47<21:24,  2.30s/img][A
+Extracting features@t:  70%|██████▉   | 1297/1854 [49:49<21:21,  2.30s/img][A
+Extracting features@t:  70%|███████   | 1298/1854 [49:51<21:20,  2.30s/img][A
+Extracting features@t:  70%|███████   | 1299/1854 [49:54<21:17,  2.30s/img][A
+Extracting features@t:  70%|███████   | 1300/1854 [49:56<21:15,  2.30s/img][A
+Extracting features@t:  70%|███████   | 1301/1854 [49:58<21:13,  2.30s/img][A
+Extracting features@t:  70%|███████   | 1302/1854 [50:00<21:11,  2.30s/img][A
+Extracting features@t:  70%|███████   | 1303/1854 [50:03<21:09,  2.30s/img][A
+Extracting features@t:  70%|███████   | 1304/1854 [50:05<21:07,  2.30s/img][A
+Extracting features@t:  70%|███████   | 1305/1854 [50:07<21:03,  2.30s/img][A
+Extracting features@t:  70%|███████   | 1306/1854 [50:10<21:02,  2.30s/img][A
+Extracting features@t:  70%|███████   | 1307/1854 [50:12<21:00,  2.30s/img][A
+Extracting features@t:  71%|███████   | 1308/1854 [50:14<20:58,  2.31s/img][A
+Extracting features@t:  71%|███████   | 1309/1854 [50:17<20:56,  2.31s/img][A
+Extracting features@t:  71%|███████   | 1310/1854 [50:19<20:54,  2.31s/img][A
+Extracting features@t:  71%|███████   | 1311/1854 [50:21<20:51,  2.30s/img][A
+Extracting features@t:  71%|███████   | 1312/1854 [50:24<20:48,  2.30s/img][A
+Extracting features@t:  71%|███████   | 1313/1854 [50:26<20:47,  2.31s/img][A
+Extracting features@t:  71%|███████   | 1314/1854 [50:28<20:43,  2.30s/img][A
+Extracting features@t:  71%|███████   | 1315/1854 [50:30<20:41,  2.30s/img][A
+Extracting features@t:  71%|███████   | 1316/1854 [50:33<20:39,  2.30s/img][A
+Extracting features@t:  71%|███████   | 1317/1854 [50:35<20:37,  2.30s/img][A
+Extracting features@t:  71%|███████   | 1318/1854 [50:37<20:34,  2.30s/img][A
+Extracting features@t:  71%|███████   | 1319/1854 [50:40<20:32,  2.30s/img][A
+Extracting features@t:  71%|███████   | 1320/1854 [50:42<20:30,  2.30s/img][A
+Extracting features@t:  71%|███████▏  | 1321/1854 [50:44<20:27,  2.30s/img][A
+Extracting features@t:  71%|███████▏  | 1322/1854 [50:47<20:25,  2.30s/img][A
+Extracting features@t:  71%|███████▏  | 1323/1854 [50:49<20:23,  2.30s/img][A
+Extracting features@t:  71%|███████▏  | 1324/1854 [50:51<20:20,  2.30s/img][A
+Extracting features@t:  71%|███████▏  | 1325/1854 [50:53<20:19,  2.30s/img][A
+Extracting features@t:  72%|███████▏  | 1326/1854 [50:56<20:16,  2.30s/img][A
+Extracting features@t:  72%|███████▏  | 1327/1854 [50:58<20:14,  2.30s/img][A
+Extracting features@t:  72%|███████▏  | 1328/1854 [51:00<20:10,  2.30s/img][A
+Extracting features@t:  72%|███████▏  | 1329/1854 [51:03<20:09,  2.30s/img][A
+Extracting features@t:  72%|███████▏  | 1330/1854 [51:05<20:07,  2.30s/img][A
+Extracting features@t:  72%|███████▏  | 1331/1854 [51:07<20:05,  2.31s/img][A
+Extracting features@t:  72%|███████▏  | 1332/1854 [51:10<20:03,  2.31s/img][A
+Extracting features@t:  72%|███████▏  | 1333/1854 [51:12<20:01,  2.31s/img][A
+Extracting features@t:  72%|███████▏  | 1334/1854 [51:14<19:59,  2.31s/img][A
+Extracting features@t:  72%|███████▏  | 1335/1854 [51:17<19:56,  2.31s/img][A
+Extracting features@t:  72%|███████▏  | 1336/1854 [51:19<19:54,  2.31s/img][A
+Extracting features@t:  72%|███████▏  | 1337/1854 [51:21<19:51,  2.31s/img][A
+Extracting features@t:  72%|███████▏  | 1338/1854 [51:23<19:50,  2.31s/img][A
+Extracting features@t:  72%|███████▏  | 1339/1854 [51:26<19:47,  2.31s/img][A
+Extracting features@t:  72%|███████▏  | 1340/1854 [51:28<19:43,  2.30s/img][A
+Extracting features@t:  72%|███████▏  | 1341/1854 [51:30<19:42,  2.30s/img][A
+Extracting features@t:  72%|███████▏  | 1342/1854 [51:33<19:39,  2.30s/img][A
+Extracting features@t:  72%|███████▏  | 1343/1854 [51:35<19:37,  2.31s/img][A
+Extracting features@t:  72%|███████▏  | 1344/1854 [51:37<19:35,  2.31s/img][A
+Extracting features@t:  73%|███████▎  | 1345/1854 [51:40<19:33,  2.31s/img][A
+Extracting features@t:  73%|███████▎  | 1346/1854 [51:42<19:31,  2.31s/img][A
+Extracting features@t:  73%|███████▎  | 1347/1854 [51:44<19:28,  2.30s/img][A
+Extracting features@t:  73%|███████▎  | 1348/1854 [51:46<19:25,  2.30s/img][A
+Extracting features@t:  73%|███████▎  | 1349/1854 [51:49<19:28,  2.31s/img][A
+Extracting features@t:  73%|███████▎  | 1350/1854 [51:51<19:29,  2.32s/img][A
+Extracting features@t:  73%|███████▎  | 1351/1854 [51:53<19:28,  2.32s/img][A
+Extracting features@t:  73%|███████▎  | 1352/1854 [51:56<19:27,  2.33s/img][A
+Extracting features@t:  73%|███████▎  | 1353/1854 [51:58<19:26,  2.33s/img][A
+Extracting features@t:  73%|███████▎  | 1354/1854 [52:00<19:24,  2.33s/img][A
+Extracting features@t:  73%|███████▎  | 1355/1854 [52:03<19:22,  2.33s/img][A
+Extracting features@t:  73%|███████▎  | 1356/1854 [52:05<19:20,  2.33s/img][A
+Extracting features@t:  73%|███████▎  | 1357/1854 [52:07<19:18,  2.33s/img][A
+Extracting features@t:  73%|███████▎  | 1358/1854 [52:10<19:16,  2.33s/img][A
+Extracting features@t:  73%|███████▎  | 1359/1854 [52:12<19:09,  2.32s/img][A
+Extracting features@t:  73%|███████▎  | 1360/1854 [52:14<19:04,  2.32s/img][A
+Extracting features@t:  73%|███████▎  | 1361/1854 [52:17<18:59,  2.31s/img][A
+Extracting features@t:  73%|███████▎  | 1362/1854 [52:19<18:55,  2.31s/img][A
+Extracting features@t:  74%|███████▎  | 1363/1854 [52:21<18:53,  2.31s/img][A
+Extracting features@t:  74%|███████▎  | 1364/1854 [52:24<18:50,  2.31s/img][A
+Extracting features@t:  74%|███████▎  | 1365/1854 [52:26<18:46,  2.30s/img][A
+Extracting features@t:  74%|███████▎  | 1366/1854 [52:28<18:44,  2.30s/img][A
+Extracting features@t:  74%|███████▎  | 1367/1854 [52:31<18:40,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1368/1854 [52:33<18:38,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1369/1854 [52:35<18:36,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1370/1854 [52:37<18:34,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1371/1854 [52:40<18:32,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1372/1854 [52:42<18:30,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1373/1854 [52:44<18:28,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1374/1854 [52:47<18:25,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1375/1854 [52:49<18:23,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1376/1854 [52:51<18:20,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1377/1854 [52:54<18:18,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1378/1854 [52:56<18:16,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1379/1854 [52:58<18:14,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1380/1854 [53:00<18:11,  2.30s/img][A
+Extracting features@t:  74%|███████▍  | 1381/1854 [53:03<18:09,  2.30s/img][A
+Extracting features@t:  75%|███████▍  | 1382/1854 [53:05<18:06,  2.30s/img][A
+Extracting features@t:  75%|███████▍  | 1383/1854 [53:07<18:05,  2.30s/img][A
+Extracting features@t:  75%|███████▍  | 1384/1854 [53:10<18:03,  2.30s/img][A
+Extracting features@t:  75%|███████▍  | 1385/1854 [53:12<18:00,  2.30s/img][A
+Extracting features@t:  75%|███████▍  | 1386/1854 [53:14<17:58,  2.30s/img][A
+Extracting features@t:  75%|███████▍  | 1387/1854 [53:17<17:56,  2.30s/img][A
+Extracting features@t:  75%|███████▍  | 1388/1854 [53:19<17:53,  2.30s/img][A
+Extracting features@t:  75%|███████▍  | 1389/1854 [53:21<17:50,  2.30s/img][A
+Extracting features@t:  75%|███████▍  | 1390/1854 [53:24<17:48,  2.30s/img][A
+Extracting features@t:  75%|███████▌  | 1391/1854 [53:26<17:45,  2.30s/img][A
+Extracting features@t:  75%|███████▌  | 1392/1854 [53:28<17:43,  2.30s/img][A
+Extracting features@t:  75%|███████▌  | 1393/1854 [53:30<17:40,  2.30s/img][A
+Extracting features@t:  75%|███████▌  | 1394/1854 [53:33<17:39,  2.30s/img][A
+Extracting features@t:  75%|███████▌  | 1395/1854 [53:35<17:37,  2.30s/img][A
+Extracting features@t:  75%|███████▌  | 1396/1854 [53:37<17:34,  2.30s/img][A
+Extracting features@t:  75%|███████▌  | 1397/1854 [53:40<17:32,  2.30s/img][A
+Extracting features@t:  75%|███████▌  | 1398/1854 [53:42<17:30,  2.30s/img][A
+Extracting features@t:  75%|███████▌  | 1399/1854 [53:44<17:27,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1400/1854 [53:47<17:25,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1401/1854 [53:49<17:23,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1402/1854 [53:51<17:21,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1403/1854 [53:53<17:19,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1404/1854 [53:56<17:16,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1405/1854 [53:58<17:14,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1406/1854 [54:00<17:12,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1407/1854 [54:03<17:10,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1408/1854 [54:05<17:07,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1409/1854 [54:07<17:04,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1410/1854 [54:10<17:03,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1411/1854 [54:12<17:00,  2.30s/img][A
+Extracting features@t:  76%|███████▌  | 1412/1854 [54:14<16:58,  2.31s/img][A
+Extracting features@t:  76%|███████▌  | 1413/1854 [54:16<16:55,  2.30s/img][A
+Extracting features@t:  76%|███████▋  | 1414/1854 [54:19<16:53,  2.30s/img][A
+Extracting features@t:  76%|███████▋  | 1415/1854 [54:21<16:51,  2.31s/img][A
+Extracting features@t:  76%|███████▋  | 1416/1854 [54:23<16:48,  2.30s/img][A
+Extracting features@t:  76%|███████▋  | 1417/1854 [54:26<16:46,  2.30s/img][A
+Extracting features@t:  76%|███████▋  | 1418/1854 [54:28<16:44,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1419/1854 [54:30<16:41,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1420/1854 [54:33<16:39,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1421/1854 [54:35<16:36,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1422/1854 [54:37<16:34,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1423/1854 [54:40<16:32,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1424/1854 [54:42<16:29,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1425/1854 [54:44<16:27,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1426/1854 [54:46<16:24,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1427/1854 [54:49<16:23,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1428/1854 [54:51<16:21,  2.30s/img][A
+Extracting features@t:  77%|███████▋  | 1429/1854 [54:53<16:19,  2.31s/img][A
+Extracting features@t:  77%|███████▋  | 1430/1854 [54:56<16:17,  2.31s/img][A
+Extracting features@t:  77%|███████▋  | 1431/1854 [54:58<16:18,  2.31s/img][A
+Extracting features@t:  77%|███████▋  | 1432/1854 [55:00<16:18,  2.32s/img][A
+Extracting features@t:  77%|███████▋  | 1433/1854 [55:03<16:18,  2.33s/img][A
+Extracting features@t:  77%|███████▋  | 1434/1854 [55:05<16:17,  2.33s/img][A
+Extracting features@t:  77%|███████▋  | 1435/1854 [55:07<16:15,  2.33s/img][A
+Extracting features@t:  77%|███████▋  | 1436/1854 [55:10<16:13,  2.33s/img][A
+Extracting features@t:  78%|███████▊  | 1437/1854 [55:12<16:10,  2.33s/img][A
+Extracting features@t:  78%|███████▊  | 1438/1854 [55:14<16:09,  2.33s/img][A
+Extracting features@t:  78%|███████▊  | 1439/1854 [55:17<16:07,  2.33s/img][A
+Extracting features@t:  78%|███████▊  | 1440/1854 [55:19<16:02,  2.33s/img][A
+Extracting features@t:  78%|███████▊  | 1441/1854 [55:21<15:57,  2.32s/img][A
+Extracting features@t:  78%|███████▊  | 1442/1854 [55:24<15:54,  2.32s/img][A
+Extracting features@t:  78%|███████▊  | 1443/1854 [55:26<15:50,  2.31s/img][A
+Extracting features@t:  78%|███████▊  | 1444/1854 [55:28<15:47,  2.31s/img][A
+Extracting features@t:  78%|███████▊  | 1445/1854 [55:30<15:43,  2.31s/img][A
+Extracting features@t:  78%|███████▊  | 1446/1854 [55:33<15:41,  2.31s/img][A
+Extracting features@t:  78%|███████▊  | 1447/1854 [55:35<15:38,  2.31s/img][A
+Extracting features@t:  78%|███████▊  | 1448/1854 [55:37<15:35,  2.31s/img][A
+Extracting features@t:  78%|███████▊  | 1449/1854 [55:40<15:32,  2.30s/img][A
+Extracting features@t:  78%|███████▊  | 1450/1854 [55:42<15:31,  2.30s/img][A
+Extracting features@t:  78%|███████▊  | 1451/1854 [55:44<15:28,  2.30s/img][A
+Extracting features@t:  78%|███████▊  | 1452/1854 [55:47<15:25,  2.30s/img][A
+Extracting features@t:  78%|███████▊  | 1453/1854 [55:49<15:23,  2.30s/img][A
+Extracting features@t:  78%|███████▊  | 1454/1854 [55:51<15:22,  2.31s/img][A
+Extracting features@t:  78%|███████▊  | 1455/1854 [55:54<15:19,  2.31s/img][A
+Extracting features@t:  79%|███████▊  | 1456/1854 [55:56<15:17,  2.31s/img][A
+Extracting features@t:  79%|███████▊  | 1457/1854 [55:58<15:15,  2.31s/img][A
+Extracting features@t:  79%|███████▊  | 1458/1854 [56:00<15:12,  2.31s/img][A
+Extracting features@t:  79%|███████▊  | 1459/1854 [56:03<15:10,  2.31s/img][A
+Extracting features@t:  79%|███████▊  | 1460/1854 [56:05<15:07,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1461/1854 [56:07<15:05,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1462/1854 [56:10<15:03,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1463/1854 [56:12<15:01,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1464/1854 [56:14<14:58,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1465/1854 [56:17<14:56,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1466/1854 [56:19<14:53,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1467/1854 [56:21<14:51,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1468/1854 [56:23<14:48,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1469/1854 [56:26<14:46,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1470/1854 [56:28<14:44,  2.30s/img][A
+Extracting features@t:  79%|███████▉  | 1471/1854 [56:30<14:42,  2.31s/img][A
+Extracting features@t:  79%|███████▉  | 1472/1854 [56:33<14:40,  2.31s/img][A
+Extracting features@t:  79%|███████▉  | 1473/1854 [56:35<14:38,  2.31s/img][A
+Extracting features@t:  80%|███████▉  | 1474/1854 [56:37<14:36,  2.31s/img][A
+Extracting features@t:  80%|███████▉  | 1475/1854 [56:40<14:33,  2.31s/img][A
+Extracting features@t:  80%|███████▉  | 1476/1854 [56:42<14:31,  2.30s/img][A
+Extracting features@t:  80%|███████▉  | 1477/1854 [56:44<14:28,  2.30s/img][A
+Extracting features@t:  80%|███████▉  | 1478/1854 [56:47<14:26,  2.31s/img][A
+Extracting features@t:  80%|███████▉  | 1479/1854 [56:49<14:24,  2.31s/img][A
+Extracting features@t:  80%|███████▉  | 1480/1854 [56:51<14:21,  2.30s/img][A
+Extracting features@t:  80%|███████▉  | 1481/1854 [56:53<14:19,  2.31s/img][A
+Extracting features@t:  80%|███████▉  | 1482/1854 [56:56<14:17,  2.30s/img][A
+Extracting features@t:  80%|███████▉  | 1483/1854 [56:58<14:15,  2.31s/img][A
+Extracting features@t:  80%|████████  | 1484/1854 [57:00<14:13,  2.31s/img][A
+Extracting features@t:  80%|████████  | 1485/1854 [57:03<14:10,  2.30s/img][A
+Extracting features@t:  80%|████████  | 1486/1854 [57:05<14:08,  2.30s/img][A
+Extracting features@t:  80%|████████  | 1487/1854 [57:07<14:05,  2.31s/img][A
+Extracting features@t:  80%|████████  | 1488/1854 [57:10<14:03,  2.30s/img][A
+Extracting features@t:  80%|████████  | 1489/1854 [57:12<14:01,  2.30s/img][A
+Extracting features@t:  80%|████████  | 1490/1854 [57:14<13:58,  2.30s/img][A
+Extracting features@t:  80%|████████  | 1491/1854 [57:16<13:55,  2.30s/img][A
+Extracting features@t:  80%|████████  | 1492/1854 [57:19<13:53,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1493/1854 [57:21<13:50,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1494/1854 [57:23<13:49,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1495/1854 [57:26<13:46,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1496/1854 [57:28<13:44,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1497/1854 [57:30<13:41,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1498/1854 [57:33<13:39,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1499/1854 [57:35<13:36,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1500/1854 [57:37<13:34,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1501/1854 [57:39<13:32,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1502/1854 [57:42<13:30,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1503/1854 [57:44<13:28,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1504/1854 [57:46<13:26,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1505/1854 [57:49<13:23,  2.30s/img][A
+Extracting features@t:  81%|████████  | 1506/1854 [57:51<13:21,  2.30s/img][A
+Extracting features@t:  81%|████████▏ | 1507/1854 [57:53<13:19,  2.30s/img][A
+Extracting features@t:  81%|████████▏ | 1508/1854 [57:56<13:16,  2.30s/img][A
+Extracting features@t:  81%|████████▏ | 1509/1854 [57:58<13:14,  2.30s/img][A
+Extracting features@t:  81%|████████▏ | 1510/1854 [58:00<13:12,  2.30s/img][A
+Extracting features@t:  81%|████████▏ | 1511/1854 [58:03<13:09,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1512/1854 [58:05<13:06,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1513/1854 [58:07<13:04,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1514/1854 [58:09<13:02,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1515/1854 [58:12<13:00,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1516/1854 [58:14<12:58,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1517/1854 [58:16<12:56,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1518/1854 [58:19<12:53,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1519/1854 [58:21<12:51,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1520/1854 [58:23<12:49,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1521/1854 [58:26<12:46,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1522/1854 [58:28<12:44,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1523/1854 [58:30<12:41,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1524/1854 [58:32<12:40,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1525/1854 [58:35<12:38,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1526/1854 [58:37<12:35,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1527/1854 [58:39<12:33,  2.30s/img][A
+Extracting features@t:  82%|████████▏ | 1528/1854 [58:42<12:31,  2.31s/img][A
+Extracting features@t:  82%|████████▏ | 1529/1854 [58:44<12:29,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1530/1854 [58:46<12:26,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1531/1854 [58:49<12:24,  2.31s/img][A
+Extracting features@t:  83%|████████▎ | 1532/1854 [58:51<12:22,  2.31s/img][A
+Extracting features@t:  83%|████████▎ | 1533/1854 [58:53<12:20,  2.31s/img][A
+Extracting features@t:  83%|████████▎ | 1534/1854 [58:56<12:18,  2.31s/img][A
+Extracting features@t:  83%|████████▎ | 1535/1854 [58:58<12:15,  2.31s/img][A
+Extracting features@t:  83%|████████▎ | 1536/1854 [59:00<12:13,  2.31s/img][A
+Extracting features@t:  83%|████████▎ | 1537/1854 [59:02<12:10,  2.31s/img][A
+Extracting features@t:  83%|████████▎ | 1538/1854 [59:05<12:08,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1539/1854 [59:07<12:06,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1540/1854 [59:09<12:03,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1541/1854 [59:12<12:01,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1542/1854 [59:14<11:58,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1543/1854 [59:16<11:56,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1544/1854 [59:19<11:54,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1545/1854 [59:21<11:51,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1546/1854 [59:23<11:49,  2.30s/img][A
+Extracting features@t:  83%|████████▎ | 1547/1854 [59:25<11:47,  2.31s/img][A
+Extracting features@t:  83%|████████▎ | 1548/1854 [59:28<11:45,  2.31s/img][A
+Extracting features@t:  84%|████████▎ | 1549/1854 [59:30<11:42,  2.30s/img][A
+Extracting features@t:  84%|████████▎ | 1550/1854 [59:32<11:40,  2.30s/img][A
+Extracting features@t:  84%|████████▎ | 1551/1854 [59:35<11:37,  2.30s/img][A
+Extracting features@t:  84%|████████▎ | 1552/1854 [59:37<11:35,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1553/1854 [59:39<11:32,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1554/1854 [59:42<11:30,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1555/1854 [59:44<11:28,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1556/1854 [59:46<11:25,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1557/1854 [59:48<11:23,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1558/1854 [59:51<11:21,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1559/1854 [59:53<11:18,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1560/1854 [59:55<11:16,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1561/1854 [59:58<11:14,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1562/1854 [1:00:00<11:12,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1563/1854 [1:00:02<11:10,  2.31s/img][A
+Extracting features@t:  84%|████████▍ | 1564/1854 [1:00:05<11:07,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1565/1854 [1:00:07<11:05,  2.30s/img][A
+Extracting features@t:  84%|████████▍ | 1566/1854 [1:00:09<11:03,  2.30s/img][A
+Extracting features@t:  85%|████████▍ | 1567/1854 [1:00:12<11:01,  2.30s/img][A
+Extracting features@t:  85%|████████▍ | 1568/1854 [1:00:14<10:59,  2.30s/img][A
+Extracting features@t:  85%|████████▍ | 1569/1854 [1:00:16<10:56,  2.30s/img][A
+Extracting features@t:  85%|████████▍ | 1570/1854 [1:00:18<10:54,  2.30s/img][A
+Extracting features@t:  85%|████████▍ | 1571/1854 [1:00:21<10:51,  2.30s/img][A
+Extracting features@t:  85%|████████▍ | 1572/1854 [1:00:23<10:49,  2.30s/img][A
+Extracting features@t:  85%|████████▍ | 1573/1854 [1:00:25<10:47,  2.30s/img][A
+Extracting features@t:  85%|████████▍ | 1574/1854 [1:00:28<10:44,  2.30s/img][A
+Extracting features@t:  85%|████████▍ | 1575/1854 [1:00:30<10:42,  2.30s/img][A
+Extracting features@t:  85%|████████▌ | 1576/1854 [1:00:32<10:40,  2.30s/img][A
+Extracting features@t:  85%|████████▌ | 1577/1854 [1:00:35<10:38,  2.30s/img][A
+Extracting features@t:  85%|████████▌ | 1578/1854 [1:00:37<10:35,  2.30s/img][A
+Extracting features@t:  85%|████████▌ | 1579/1854 [1:00:39<10:33,  2.30s/img][A
+Extracting features@t:  85%|████████▌ | 1580/1854 [1:00:41<10:30,  2.30s/img][A
+Extracting features@t:  85%|████████▌ | 1581/1854 [1:00:44<10:28,  2.30s/img][A
+Extracting features@t:  85%|████████▌ | 1582/1854 [1:00:46<10:26,  2.30s/img][A
+Extracting features@t:  85%|████████▌ | 1583/1854 [1:00:48<10:24,  2.30s/img][A
+Extracting features@t:  85%|████████▌ | 1584/1854 [1:00:51<10:22,  2.30s/img][A
+Extracting features@t:  85%|████████▌ | 1585/1854 [1:00:53<10:20,  2.31s/img][A
+Extracting features@t:  86%|████████▌ | 1586/1854 [1:00:55<10:17,  2.30s/img][A
+Extracting features@t:  86%|████████▌ | 1587/1854 [1:00:58<10:15,  2.30s/img][A
+Extracting features@t:  86%|████████▌ | 1588/1854 [1:01:00<10:13,  2.30s/img][A
+Extracting features@t:  86%|████████▌ | 1589/1854 [1:01:02<10:10,  2.30s/img][A
+Extracting features@t:  86%|████████▌ | 1590/1854 [1:01:05<10:08,  2.30s/img][A
+Extracting features@t:  86%|████████▌ | 1591/1854 [1:01:07<10:06,  2.30s/img][A
+Extracting features@t:  86%|████████▌ | 1592/1854 [1:01:09<10:03,  2.30s/img][A
+Extracting features@t:  86%|████████▌ | 1593/1854 [1:01:11<10:01,  2.31s/img][A
+Extracting features@t:  86%|████████▌ | 1594/1854 [1:01:14<09:59,  2.30s/img][A
+Extracting features@t:  86%|████████▌ | 1595/1854 [1:01:16<09:56,  2.30s/img][A
+Extracting features@t:  86%|████████▌ | 1596/1854 [1:01:18<09:54,  2.30s/img][A
+Extracting features@t:  86%|████████▌ | 1597/1854 [1:01:21<09:52,  2.31s/img][A
+Extracting features@t:  86%|████████▌ | 1598/1854 [1:01:23<09:50,  2.31s/img][A
+Extracting features@t:  86%|████████▌ | 1599/1854 [1:01:25<09:47,  2.31s/img][A
+Extracting features@t:  86%|████████▋ | 1600/1854 [1:01:28<09:45,  2.30s/img][A
+Extracting features@t:  86%|████████▋ | 1601/1854 [1:01:30<09:42,  2.30s/img][A
+Extracting features@t:  86%|████████▋ | 1602/1854 [1:01:32<09:40,  2.30s/img][A
+Extracting features@t:  86%|████████▋ | 1603/1854 [1:01:34<09:38,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1604/1854 [1:01:37<09:36,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1605/1854 [1:01:39<09:33,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1606/1854 [1:01:41<09:31,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1607/1854 [1:01:44<09:28,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1608/1854 [1:01:46<09:26,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1609/1854 [1:01:48<09:24,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1610/1854 [1:01:51<09:22,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1611/1854 [1:01:53<09:19,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1612/1854 [1:01:55<09:17,  2.31s/img][A
+Extracting features@t:  87%|████████▋ | 1613/1854 [1:01:58<09:15,  2.31s/img][A
+Extracting features@t:  87%|████████▋ | 1614/1854 [1:02:00<09:13,  2.31s/img][A
+Extracting features@t:  87%|████████▋ | 1615/1854 [1:02:02<09:10,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1616/1854 [1:02:04<09:08,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1617/1854 [1:02:07<09:05,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1618/1854 [1:02:09<09:03,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1619/1854 [1:02:11<09:01,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1620/1854 [1:02:14<08:58,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1621/1854 [1:02:16<08:56,  2.30s/img][A
+Extracting features@t:  87%|████████▋ | 1622/1854 [1:02:18<08:54,  2.30s/img][A
+Extracting features@t:  88%|████████▊ | 1623/1854 [1:02:21<08:51,  2.30s/img][A
+Extracting features@t:  88%|████████▊ | 1624/1854 [1:02:23<08:49,  2.30s/img][A
+Extracting features@t:  88%|████████▊ | 1625/1854 [1:02:25<08:47,  2.30s/img][A
+Extracting features@t:  88%|████████▊ | 1626/1854 [1:02:27<08:45,  2.30s/img][A
+Extracting features@t:  88%|████████▊ | 1627/1854 [1:02:30<08:43,  2.30s/img][A
+Extracting features@t:  88%|████████▊ | 1628/1854 [1:02:32<08:41,  2.31s/img][A
+Extracting features@t:  88%|████████▊ | 1629/1854 [1:02:34<08:38,  2.31s/img][A
+Extracting features@t:  88%|████████▊ | 1630/1854 [1:02:37<08:38,  2.31s/img][A
+Extracting features@t:  88%|████████▊ | 1631/1854 [1:02:39<08:36,  2.32s/img][A
+Extracting features@t:  88%|████████▊ | 1632/1854 [1:02:41<08:33,  2.31s/img][A
+Extracting features@t:  88%|████████▊ | 1633/1854 [1:02:44<08:30,  2.31s/img][A
+Extracting features@t:  88%|████████▊ | 1634/1854 [1:02:46<08:27,  2.31s/img][A
+Extracting features@t:  88%|████████▊ | 1635/1854 [1:02:48<08:27,  2.32s/img][A
+Extracting features@t:  88%|████████▊ | 1636/1854 [1:02:51<08:25,  2.32s/img][A
+Extracting features@t:  88%|████████▊ | 1637/1854 [1:02:53<08:21,  2.31s/img][A
+Extracting features@t:  88%|████████▊ | 1638/1854 [1:02:55<08:18,  2.31s/img][A
+Extracting features@t:  88%|████████▊ | 1639/1854 [1:02:58<08:15,  2.31s/img][A
+Extracting features@t:  88%|████████▊ | 1640/1854 [1:03:00<08:12,  2.30s/img][A
+Extracting features@t:  89%|████████▊ | 1641/1854 [1:03:02<08:10,  2.30s/img][A
+Extracting features@t:  89%|████████▊ | 1642/1854 [1:03:04<08:08,  2.30s/img][A
+Extracting features@t:  89%|████████▊ | 1643/1854 [1:03:07<08:05,  2.30s/img][A
+Extracting features@t:  89%|████████▊ | 1644/1854 [1:03:09<08:03,  2.30s/img][A
+Extracting features@t:  89%|████████▊ | 1645/1854 [1:03:11<08:01,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1646/1854 [1:03:14<07:59,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1647/1854 [1:03:16<07:57,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1648/1854 [1:03:18<07:55,  2.31s/img][A
+Extracting features@t:  89%|████████▉ | 1649/1854 [1:03:21<07:52,  2.31s/img][A
+Extracting features@t:  89%|████████▉ | 1650/1854 [1:03:23<07:50,  2.31s/img][A
+Extracting features@t:  89%|████████▉ | 1651/1854 [1:03:25<07:47,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1652/1854 [1:03:27<07:45,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1653/1854 [1:03:30<07:43,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1654/1854 [1:03:32<07:40,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1655/1854 [1:03:34<07:38,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1656/1854 [1:03:37<07:36,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1657/1854 [1:03:39<07:33,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1658/1854 [1:03:41<07:31,  2.30s/img][A
+Extracting features@t:  89%|████████▉ | 1659/1854 [1:03:44<07:29,  2.30s/img][A
+Extracting features@t:  90%|████████▉ | 1660/1854 [1:03:46<07:26,  2.30s/img][A
+Extracting features@t:  90%|████████▉ | 1661/1854 [1:03:48<07:24,  2.31s/img][A
+Extracting features@t:  90%|████████▉ | 1662/1854 [1:03:50<07:22,  2.31s/img][A
+Extracting features@t:  90%|████████▉ | 1663/1854 [1:03:53<07:20,  2.31s/img][A
+Extracting features@t:  90%|████████▉ | 1664/1854 [1:03:55<07:17,  2.30s/img][A
+Extracting features@t:  90%|████████▉ | 1665/1854 [1:03:57<07:15,  2.30s/img][A
+Extracting features@t:  90%|████████▉ | 1666/1854 [1:04:00<07:13,  2.31s/img][A
+Extracting features@t:  90%|████████▉ | 1667/1854 [1:04:02<07:11,  2.31s/img][A
+Extracting features@t:  90%|████████▉ | 1668/1854 [1:04:04<07:08,  2.31s/img][A
+Extracting features@t:  90%|█████████ | 1669/1854 [1:04:07<07:06,  2.31s/img][A
+Extracting features@t:  90%|█████████ | 1670/1854 [1:04:09<07:04,  2.31s/img][A
+Extracting features@t:  90%|█████████ | 1671/1854 [1:04:11<07:01,  2.31s/img][A
+Extracting features@t:  90%|█████████ | 1672/1854 [1:04:14<06:59,  2.31s/img][A
+Extracting features@t:  90%|█████████ | 1673/1854 [1:04:16<06:56,  2.30s/img][A
+Extracting features@t:  90%|█████████ | 1674/1854 [1:04:18<06:54,  2.30s/img][A
+Extracting features@t:  90%|█████████ | 1675/1854 [1:04:20<06:52,  2.30s/img][A
+Extracting features@t:  90%|█████████ | 1676/1854 [1:04:23<06:49,  2.30s/img][A
+Extracting features@t:  90%|█████████ | 1677/1854 [1:04:25<06:47,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1678/1854 [1:04:27<06:45,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1679/1854 [1:04:30<06:42,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1680/1854 [1:04:32<06:40,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1681/1854 [1:04:34<06:38,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1682/1854 [1:04:37<06:35,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1683/1854 [1:04:39<06:33,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1684/1854 [1:04:41<06:31,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1685/1854 [1:04:43<06:29,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1686/1854 [1:04:46<06:26,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1687/1854 [1:04:48<06:24,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1688/1854 [1:04:50<06:22,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1689/1854 [1:04:53<06:20,  2.30s/img][A
+Extracting features@t:  91%|█████████ | 1690/1854 [1:04:55<06:18,  2.31s/img][A
+Extracting features@t:  91%|█████████ | 1691/1854 [1:04:57<06:15,  2.30s/img][A
+Extracting features@t:  91%|█████████▏| 1692/1854 [1:05:00<06:13,  2.30s/img][A
+Extracting features@t:  91%|█████████▏| 1693/1854 [1:05:02<06:10,  2.30s/img][A
+Extracting features@t:  91%|█████████▏| 1694/1854 [1:05:04<06:08,  2.30s/img][A
+Extracting features@t:  91%|█████████▏| 1695/1854 [1:05:07<06:06,  2.30s/img][A
+Extracting features@t:  91%|█████████▏| 1696/1854 [1:05:09<06:03,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1697/1854 [1:05:11<06:01,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1698/1854 [1:05:13<05:59,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1699/1854 [1:05:16<05:57,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1700/1854 [1:05:18<05:54,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1701/1854 [1:05:20<05:52,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1702/1854 [1:05:23<05:50,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1703/1854 [1:05:25<05:47,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1704/1854 [1:05:27<05:45,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1705/1854 [1:05:30<05:43,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1706/1854 [1:05:32<05:40,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1707/1854 [1:05:34<05:38,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1708/1854 [1:05:36<05:36,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1709/1854 [1:05:39<05:33,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1710/1854 [1:05:41<05:31,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1711/1854 [1:05:43<05:29,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1712/1854 [1:05:46<05:27,  2.31s/img][A
+Extracting features@t:  92%|█████████▏| 1713/1854 [1:05:48<05:24,  2.30s/img][A
+Extracting features@t:  92%|█████████▏| 1714/1854 [1:05:50<05:22,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1715/1854 [1:05:53<05:20,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1716/1854 [1:05:55<05:17,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1717/1854 [1:05:57<05:15,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1718/1854 [1:05:59<05:12,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1719/1854 [1:06:02<05:10,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1720/1854 [1:06:04<05:08,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1721/1854 [1:06:06<05:06,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1722/1854 [1:06:09<05:03,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1723/1854 [1:06:11<05:01,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1724/1854 [1:06:13<04:59,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1725/1854 [1:06:16<04:56,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1726/1854 [1:06:18<04:54,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1727/1854 [1:06:20<04:51,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1728/1854 [1:06:22<04:49,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1729/1854 [1:06:25<04:47,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1730/1854 [1:06:27<04:45,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1731/1854 [1:06:29<04:43,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1732/1854 [1:06:32<04:40,  2.30s/img][A
+Extracting features@t:  93%|█████████▎| 1733/1854 [1:06:34<04:38,  2.30s/img][A
+Extracting features@t:  94%|█████████▎| 1734/1854 [1:06:36<04:36,  2.30s/img][A
+Extracting features@t:  94%|█████████▎| 1735/1854 [1:06:39<04:33,  2.30s/img][A
+Extracting features@t:  94%|█████████▎| 1736/1854 [1:06:41<04:31,  2.30s/img][A
+Extracting features@t:  94%|█████████▎| 1737/1854 [1:06:43<04:29,  2.30s/img][A
+Extracting features@t:  94%|█████████▎| 1738/1854 [1:06:45<04:26,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1739/1854 [1:06:48<04:24,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1740/1854 [1:06:50<04:22,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1741/1854 [1:06:52<04:19,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1742/1854 [1:06:55<04:17,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1743/1854 [1:06:57<04:15,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1744/1854 [1:06:59<04:13,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1745/1854 [1:07:02<04:10,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1746/1854 [1:07:04<04:08,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1747/1854 [1:07:06<04:06,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1748/1854 [1:07:08<04:03,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1749/1854 [1:07:11<04:01,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1750/1854 [1:07:13<03:59,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1751/1854 [1:07:15<03:56,  2.30s/img][A
+Extracting features@t:  94%|█████████▍| 1752/1854 [1:07:18<03:54,  2.30s/img][A
+Extracting features@t:  95%|█████████▍| 1753/1854 [1:07:20<03:52,  2.30s/img][A
+Extracting features@t:  95%|█████████▍| 1754/1854 [1:07:22<03:50,  2.30s/img][A
+Extracting features@t:  95%|█████████▍| 1755/1854 [1:07:25<03:47,  2.30s/img][A
+Extracting features@t:  95%|█████████▍| 1756/1854 [1:07:27<03:45,  2.30s/img][A
+Extracting features@t:  95%|█████████▍| 1757/1854 [1:07:29<03:43,  2.30s/img][A
+Extracting features@t:  95%|█████████▍| 1758/1854 [1:07:32<03:40,  2.30s/img][A
+Extracting features@t:  95%|█████████▍| 1759/1854 [1:07:34<03:38,  2.30s/img][A
+Extracting features@t:  95%|█████████▍| 1760/1854 [1:07:36<03:36,  2.30s/img][A
+Extracting features@t:  95%|█████████▍| 1761/1854 [1:07:38<03:34,  2.30s/img][A
+Extracting features@t:  95%|█████████▌| 1762/1854 [1:07:41<03:32,  2.30s/img][A
+Extracting features@t:  95%|█████████▌| 1763/1854 [1:07:43<03:29,  2.30s/img][A
+Extracting features@t:  95%|█████████▌| 1764/1854 [1:07:45<03:27,  2.30s/img][A
+Extracting features@t:  95%|█████████▌| 1765/1854 [1:07:48<03:24,  2.30s/img][A
+Extracting features@t:  95%|█████████▌| 1766/1854 [1:07:50<03:22,  2.30s/img][A
+Extracting features@t:  95%|█████████▌| 1767/1854 [1:07:52<03:20,  2.30s/img][A
+Extracting features@t:  95%|█████████▌| 1768/1854 [1:07:55<03:17,  2.30s/img][A
+Extracting features@t:  95%|█████████▌| 1769/1854 [1:07:57<03:15,  2.30s/img][A
+Extracting features@t:  95%|█████████▌| 1770/1854 [1:07:59<03:13,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1771/1854 [1:08:01<03:11,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1772/1854 [1:08:04<03:08,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1773/1854 [1:08:06<03:06,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1774/1854 [1:08:08<03:04,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1775/1854 [1:08:11<03:02,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1776/1854 [1:08:13<02:59,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1777/1854 [1:08:15<02:57,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1778/1854 [1:08:18<02:55,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1779/1854 [1:08:20<02:52,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1780/1854 [1:08:22<02:50,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1781/1854 [1:08:24<02:48,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1782/1854 [1:08:27<02:45,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1783/1854 [1:08:29<02:43,  2.30s/img][A
+Extracting features@t:  96%|█████████▌| 1784/1854 [1:08:31<02:41,  2.31s/img][A
+Extracting features@t:  96%|█████████▋| 1785/1854 [1:08:34<02:39,  2.30s/img][A
+Extracting features@t:  96%|█████████▋| 1786/1854 [1:08:36<02:36,  2.30s/img][A
+Extracting features@t:  96%|█████████▋| 1787/1854 [1:08:38<02:34,  2.30s/img][A
+Extracting features@t:  96%|█████████▋| 1788/1854 [1:08:41<02:32,  2.30s/img][A
+Extracting features@t:  96%|█████████▋| 1789/1854 [1:08:43<02:29,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1790/1854 [1:08:45<02:27,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1791/1854 [1:08:48<02:25,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1792/1854 [1:08:50<02:22,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1793/1854 [1:08:52<02:20,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1794/1854 [1:08:54<02:18,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1795/1854 [1:08:57<02:15,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1796/1854 [1:08:59<02:13,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1797/1854 [1:09:01<02:11,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1798/1854 [1:09:04<02:08,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1799/1854 [1:09:06<02:06,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1800/1854 [1:09:08<02:04,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1801/1854 [1:09:11<02:02,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1802/1854 [1:09:13<01:59,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1803/1854 [1:09:15<01:57,  2.31s/img][A
+Extracting features@t:  97%|█████████▋| 1804/1854 [1:09:17<01:55,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1805/1854 [1:09:20<01:52,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1806/1854 [1:09:22<01:50,  2.30s/img][A
+Extracting features@t:  97%|█████████▋| 1807/1854 [1:09:24<01:48,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1808/1854 [1:09:27<01:46,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1809/1854 [1:09:29<01:43,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1810/1854 [1:09:31<01:41,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1811/1854 [1:09:34<01:39,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1812/1854 [1:09:36<01:36,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1813/1854 [1:09:38<01:34,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1814/1854 [1:09:40<01:32,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1815/1854 [1:09:43<01:29,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1816/1854 [1:09:45<01:27,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1817/1854 [1:09:47<01:25,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1818/1854 [1:09:50<01:22,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1819/1854 [1:09:52<01:20,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1820/1854 [1:09:54<01:18,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1821/1854 [1:09:57<01:15,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1822/1854 [1:09:59<01:13,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1823/1854 [1:10:01<01:11,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1824/1854 [1:10:04<01:09,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1825/1854 [1:10:06<01:06,  2.30s/img][A
+Extracting features@t:  98%|█████████▊| 1826/1854 [1:10:08<01:04,  2.30s/img][A
+Extracting features@t:  99%|█████████▊| 1827/1854 [1:10:10<01:02,  2.30s/img][A
+Extracting features@t:  99%|█████████▊| 1828/1854 [1:10:13<00:59,  2.30s/img][A
+Extracting features@t:  99%|█████████▊| 1829/1854 [1:10:15<00:57,  2.30s/img][A
+Extracting features@t:  99%|█████████▊| 1830/1854 [1:10:17<00:55,  2.30s/img][A
+Extracting features@t:  99%|█████████▉| 1831/1854 [1:10:20<00:52,  2.30s/img][A
+Extracting features@t:  99%|█████████▉| 1832/1854 [1:10:22<00:50,  2.30s/img][A
+Extracting features@t:  99%|█████████▉| 1833/1854 [1:10:24<00:48,  2.30s/img][A
+Extracting features@t:  99%|█████████▉| 1834/1854 [1:10:27<00:46,  2.30s/img][A
+Extracting features@t:  99%|█████████▉| 1835/1854 [1:10:29<00:43,  2.30s/img][A
+Extracting features@t:  99%|█████████▉| 1836/1854 [1:10:31<00:41,  2.30s/img][A
+Extracting features@t:  99%|█████████▉| 1837/1854 [1:10:33<00:39,  2.31s/img][A
+Extracting features@t:  99%|█████████▉| 1838/1854 [1:10:36<00:36,  2.31s/img][A
+Extracting features@t:  99%|█████████▉| 1839/1854 [1:10:38<00:34,  2.31s/img][A
+Extracting features@t:  99%|█████████▉| 1840/1854 [1:10:40<00:32,  2.31s/img][A
+Extracting features@t:  99%|█████████▉| 1841/1854 [1:10:43<00:29,  2.31s/img][A
+Extracting features@t:  99%|█████████▉| 1842/1854 [1:10:45<00:27,  2.31s/img][A
+Extracting features@t:  99%|█████████▉| 1843/1854 [1:10:47<00:25,  2.30s/img][A
+Extracting features@t:  99%|█████████▉| 1844/1854 [1:10:50<00:23,  2.30s/img][A
+Extracting features@t: 100%|█████████▉| 1845/1854 [1:10:52<00:20,  2.30s/img][A
+Extracting features@t: 100%|█████████▉| 1846/1854 [1:10:54<00:18,  2.30s/img][A
+Extracting features@t: 100%|█████████▉| 1847/1854 [1:10:56<00:16,  2.30s/img][A
+Extracting features@t: 100%|█████████▉| 1848/1854 [1:10:59<00:13,  2.30s/img][A
+Extracting features@t: 100%|█████████▉| 1849/1854 [1:11:01<00:11,  2.30s/img][A
+Extracting features@t: 100%|█████████▉| 1850/1854 [1:11:03<00:09,  2.30s/img][A
+Extracting features@t: 100%|█████████▉| 1851/1854 [1:11:06<00:06,  2.30s/img][A
+Extracting features@t: 100%|█████████▉| 1852/1854 [1:11:08<00:04,  2.30s/img][A
+Extracting features@t: 100%|█████████▉| 1853/1854 [1:11:10<00:02,  2.30s/img][A
+Extracting features@t: 100%|██████████| 1854/1854 [1:11:13<00:00,  2.30s/img][AExtracting features@t: 100%|██████████| 1854/1854 [1:11:13<00:00,  2.30s/img]
+Pipeline:  67%|██████▋    | 4/6Pipeline: 100%|██████████ | 6/6Pipeline: 100%|██████████ | 6/6
