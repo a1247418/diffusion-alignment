@@ -4,7 +4,7 @@
 #SBATCH -o slurm_logs/sd3_baselines_%A_%a.out
 #SBATCH -e slurm_logs/sd3_baselines_%A_%a.err
 #SBATCH -D ./
-#SBATCH -J sd3_baselines
+#SBATCH -J sd3_transformer_probing
 #SBATCH --partition=gpu-5h
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -60,7 +60,7 @@ echo "[Array $SLURM_ARRAY_TASK_ID] Starting run at $(date)"
 echo "  noise=${NOISE}% (noise_pct=${NOISE_PCT}), text_conditioning=${MODE}, block_idx=${BLOCK}"
 
 # Run (resources are allocated via SBATCH; srun launches the task)
-srun python3 sd3_basic_2_not_aligned_text.py \
+srun python3 sd3_basic_2_not_aligned_text_probing.py \
   --things_root "${THINGS_ROOT}" \
   --noise_pct "${NOISE_PCT}" \
   --text_conditioning "${MODE}" \
