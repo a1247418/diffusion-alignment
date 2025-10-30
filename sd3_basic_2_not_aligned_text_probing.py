@@ -510,10 +510,11 @@ def compute_ooo_acc(features: np.ndarray, triplets: np.ndarray) -> float:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--things_root", type=str, default="/home/space/thesis/things_starterpack/things_data")
-    parser.add_argument("--checkpoint", type=str, default="stabilityai/stable-diffusion-3-medium-diffusers")
-    parser.add_argument("--repo_id", type=str, default="stabilityai/stable-diffusion-3-medium-diffusers")
+    allowed_models = ["stabilityai/stable-diffusion-3-medium-diffusers", "stabilityai/stable-diffusion-3.5-medium"]
+    parser.add_argument("--checkpoint", type=str, default="stabilityai/stable-diffusion-3-medium-diffusers",choices=allowed_models)
+    parser.add_argument("--repo_id", type=str, default="stabilityai/stable-diffusion-3-medium-diffusers",choices=allowed_models)
     parser.add_argument("--cc0", action="store_true", help="Use CC0 subset (only if triplets are for CC0).")
-    parser.add_argument("--block_idx", type=int, default=8, help="Transformer block index (intermediate often works best).")
+    parser.add_argument("--block_idx", type=int, default=8, choices=range(0, 24), help="Transformer block index (intermediate often works best).")
     parser.add_argument("--noise_pct", type=float, default=0.20, help="Noise level t in [0..1]. 0.20 = 20%%.")
     parser.add_argument("--steps", type=int, default=100, help="Num inference steps for image2image.")
     parser.add_argument("--num_extractions", type=int, default=None)
