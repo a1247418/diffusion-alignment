@@ -4,3 +4,10 @@
 /.idea
 things_find_triplets.ipynb
 main_check_results.py
+*venv
+__pycache__/
+things_playground/
+reduction/
+lightning_logs/
+logs/
+sbtach_logs/

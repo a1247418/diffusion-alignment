@@ -1,7 +1,7 @@
 #!/bin/bash -l
-#SBATCH -a 0
-#SBATCH -o ./all_%A_%a.out
-#SBATCH -e ./all_%A_%a.err
+#SBATCH -a 0-263
+#SBATCH -o sbtach_logs/all_%A_%a.out
+#SBATCH -e sbtach_logs/all_%A_%a.err
 #SBATCH -D ./
 #SBATCH -J all
 #SBATCH --partition="gpu-2d"
@@ -10,24 +10,26 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=80000M
 
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate cogemb2
+
+source test4-sd3/bin/activate 
+# Replace with your own environment with the requirements from requirements_files/requirements_sd3_compatible.txt
 
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK} 
+
 
 dataset="things";
 device="gpu";
 
 things_root="/home/space/datasets/things";
-data_root="/home/llorenz/things_playground/things_data";
+data_root="/home/maxvonk/diffusion-alignment/things_playground/things_data";
 path_to_model_dict="/home/space/datasets/things/model_dict_all.json"
-probing_root="/home/llorenz/things_playground";
-log_dir="/home/llorenz/things_playground/checkpoints";
+probing_root="/home/maxvonk/diffusion-alignment/things_playground";
+log_dir="/home/maxvonk/diffusion-alignment/things_playground/checkpoints";
 
-extra_embed=""
+extra_embed="--pool" #extra_embed=""
 extra_align=""
 extra_probe=""
-base_model="sd2t"
+base_model="sd3" #Options sd1=sd1.5, sd2=sd2.1, sd2t=sd-turbo, sd3=sd3 medium, sd3.5=sd3.5 medium
 subfolder="things_data"
 embed=1
 align=1
@@ -40,6 +42,8 @@ prefix="" #nothing
 # prefix="conditionalcapt" #caption conditional
 # prefix="textlastcapt2"  #text embedding of caption2
 # prefix="conditionalcapt2" #caption2 conditional
+
+
 # prefix="optim" # optimitzed embedding
 # prefix="conditionaloptim" # optimitzed-embedding conditional
 # prefix="optimx1" # optimitzed embedding
@@ -131,6 +135,28 @@ then
 	then
 		path_to_caption_dict="/home/llorenz/things_playground/things_data/optimx1_sd2t.npy"
 	fi
+elif [ "$base_model" == "sd3" ]
+then
+	base_model="diffusion_stabilityai/stable-diffusion-3-medium-diffusers"
+	base_modules=( \
+		"transformer_blocks.0" "transformer_blocks.1" "transformer_blocks.2" "transformer_blocks.3" \
+		"transformer_blocks.4" "transformer_blocks.5" "transformer_blocks.6" "transformer_blocks.7" \
+		"transformer_blocks.8" "transformer_blocks.9" "transformer_blocks.10" "transformer_blocks.11" \
+		"transformer_blocks.12" "transformer_blocks.13" "transformer_blocks.14" "transformer_blocks.15" \
+		"transformer_blocks.16" "transformer_blocks.17" "transformer_blocks.18" "transformer_blocks.19" \
+		"transformer_blocks.20" "transformer_blocks.21" "transformer_blocks.22" "transformer_blocks.23" \
+	)
+elif [ "$base_model" == "sd3.5" ]
+then
+	base_model="diffusion_stabilityai/stable-diffusion-3.5-medium"
+	base_modules=( \
+		"transformer_blocks.0" "transformer_blocks.1" "transformer_blocks.2" "transformer_blocks.3" \
+		"transformer_blocks.4" "transformer_blocks.5" "transformer_blocks.6" "transformer_blocks.7" \
+		"transformer_blocks.8" "transformer_blocks.9" "transformer_blocks.10" "transformer_blocks.11" \
+		"transformer_blocks.12" "transformer_blocks.13" "transformer_blocks.14" "transformer_blocks.15" \
+		"transformer_blocks.16" "transformer_blocks.17" "transformer_blocks.18" "transformer_blocks.19" \
+		"transformer_blocks.20" "transformer_blocks.21" "transformer_blocks.22" "transformer_blocks.23" \
+	)
 fi
 
 if [ "$prefix" == "textlast" ] || [ "$prefix" == "textlastcapt" ] || [ "$prefix" == "textlastcapt2" ] || [ "$prefix" == "optim" ] || [ "$prefix" == "optimx1" ]
@@ -141,11 +167,8 @@ else
 	noise=(1 5 10 20 30 40 50 60 70 80 90)
 	# noise=(15 25 30 35 45 55) # 70)
 	# noise=(60 70 80 90) # 70)
-	noise=(90) # 
+	#noise=(90) # 
 fi
-
-base_modules=( "mid_block" "up_blocks.0.resnets.1" "up_blocks.1.resnets.1" ) # "up_blocks.2.resnets.1" ) # "down_blocks.1.resnets.1" )
-base_modules=( "down_blocks.0.resnets.1" )
 
 base_models=()
 for n in "${noise[@]}"; do
