@@ -279,7 +279,6 @@ sbatch reduction.sh
 
 - Hugging Face access: accept the SD3/SD3.5 license and run `huggingface-cli login`.
 - VRAM: SD3/SD3.5 benefit from GPUs with ≥16 GB. The code selects bf16 if available, otherwise fp16 on GPU, fp32 on CPU for the standalone script.
-- Caching: large model downloads are cached under HF cache (`HF_HOME`). Point it to a fast disk if needed.
 - SLURM arrays: ensure `#SBATCH -a` range in `run_all.sh` covers the number of model×module combinations you generate.
 - Captions: for `*capt*` and `*optim*` prefixes, make sure `path_to_caption_dict` points to existing files.
 - Paths: update `things_root`, `data_root`, `probing_root`, `log_dir`, and `path_to_model_dict` for your system.
