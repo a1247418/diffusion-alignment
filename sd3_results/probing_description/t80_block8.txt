@@ -1,3 +1,0 @@
-Zero-shot odd-one-out accuracy (t=80%): 0.4028
-Probing transformed odd-one-out accuracy: 0.6850
-Probing cross-validated accuracy (fold-wise OOO): 0.4996

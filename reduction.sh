@@ -10,13 +10,14 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=80000M
 
-source ~/miniconda3/etc/profile.d/conda.sh
-conda activate cogemb2
+source test4-sd3/bin/activate 
+# Replace with your own environment with the requirements from requirements_files/requirements_sd3_compatible.txt
+
 
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK} 
 
 data_root="/home/space/datasets/things";
-out_path="/home/llorenz/things_playground/reduction";
+out_path="reduction";
 
 device="gpu";
 

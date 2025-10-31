@@ -11,8 +11,14 @@
 #SBATCH --mem=80000M
 
 
-source test4-sd3/bin/activate 
-# Replace with your own environment with the requirements from requirements_files/requirements_sd3_compatible.txt
+# ToDo:
+# Source Activate
+# Die variablen am Anfang
+# Die lines zum entfernen
+# Die Slurm line mit den mehreren Jobs
+
+source test4-sd3/bin/activate
+
 
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK} 
 
@@ -29,7 +35,8 @@ log_dir="/home/maxvonk/diffusion-alignment/things_playground/checkpoints";
 extra_embed="--pool" #extra_embed=""
 extra_align=""
 extra_probe=""
-base_model="sd3" #Options sd1=sd1.5, sd2=sd2.1, sd2t=sd-turbo, sd3=sd3 medium, sd3.5=sd3.5 medium
+base_model="sd3"
+# Hier auch die anderen sd1=1.5, sd2=sd2.1, sd2t=sd-turbo
 subfolder="things_data"
 embed=1
 align=1
@@ -44,6 +51,7 @@ prefix="" #nothing
 # prefix="conditionalcapt2" #caption2 conditional
 
 
+#Note Max2U: Diese hier ignorieren
 # prefix="optim" # optimitzed embedding
 # prefix="conditionaloptim" # optimitzed-embedding conditional
 # prefix="optimx1" # optimitzed embedding
@@ -169,6 +177,9 @@ else
 	# noise=(60 70 80 90) # 70)
 	#noise=(90) # 
 fi
+
+#base_modules=( "mid_block" "up_blocks.0.resnets.1" "up_blocks.1.resnets.1" ) # "up_blocks.2.resnets.1" ) # "down_blocks.1.resnets.1" )
+#base_modules=( "down_blocks.0.resnets.1" )
 
 base_models=()
 for n in "${noise[@]}"; do

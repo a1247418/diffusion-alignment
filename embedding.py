@@ -9,7 +9,7 @@ from thingsvision import get_extractor
 from thingsvision.utils.data import DataLoader as DL
 
 from things import THINGSBehavior
-from diffusion_encoders import StableDiffusionEncoder, StableDiffusionEncoder
+from diffusion_encoders import StableDiffusionEncoder, SD3TransformerBlockEncoder
 
 from helpers import save_pickle
 
@@ -95,10 +95,18 @@ def embed(
                 batch_size=1,
             )
 
-            encoder = StableDiffusionEncoder(
-                checkpoint_name=model_params["ckpt"],
-                noise_level=model_params["noise"],
-                extraction_module_name=module_type,
+            ckpt_name = model_params["ckpt"]
+            if "stable-diffusion-3" in ckpt_name:
+                encoder = SD3TransformerBlockEncoder(
+                    checkpoint_name=ckpt_name,
+                    noise_level=model_params["noise"],
+                    extraction_module_name=module_type,
+                )
+            else:
+                encoder = StableDiffusionEncoder(
+                    checkpoint_name=ckpt_name,
+                    noise_level=model_params["noise"],
+                    extraction_module_name=module_type,
             )
 
             features = []
@@ -128,7 +136,12 @@ def embed(
                         else:
                             embedding = encoder(img, prompt=prompt, stop_early=True, seed=seed)
                             if pool:
-                                embedding = torch.mean(embedding, dim=[-2, -1])
+                                # Spatial mean for 4D; token mean for 3D
+                                if embedding.ndim == 4:
+                                    embedding = torch.mean(embedding, dim=[-2, -1])
+                                elif embedding.ndim == 3:
+                                    token_axis = 1 if embedding.shape[1] >= embedding.shape[2] else 2
+                                    embedding = torch.mean(embedding, dim=token_axis)
 
                         if avg_embedding is not None:
                             avg_embedding += embedding * (1 / n_to_avg)
@@ -136,7 +149,7 @@ def embed(
                             avg_embedding = embedding * (1 / n_to_avg)
 
                     features.append(
-                        avg_embedding.detach().cpu()
+                        avg_embedding.detach().to(torch.float32).cpu()
                     )
             if features[0].shape[0] != 1:
                 features = torch.stack(features).numpy()
